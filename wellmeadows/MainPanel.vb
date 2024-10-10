@@ -13,7 +13,7 @@ Public Class MainPanel
         panel_Supplier.Visible = False
         panel_Appointment.Visible = False
         panel_Profile.Visible = False
-        pnl_Staff_Edit.Visible = False
+        pnl_Staff_Edit_1.Visible = False
         pnl_Staff_List.Visible = False
     End Sub
 
@@ -233,7 +233,7 @@ Public Class MainPanel
         ' Now make sure the staff edit panel is shown
         panel_Staff.Visible = True
         pnl_Staff_List.Visible = False
-        pnl_Staff_Edit.Visible = True
+        pnl_Staff_Edit_1.Visible = True
 
         ' Reset label colors and set the active label color
         ResetLabelColors()

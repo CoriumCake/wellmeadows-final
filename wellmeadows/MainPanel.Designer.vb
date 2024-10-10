@@ -57,7 +57,7 @@ Partial Class MainPanel
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.pnl_Staff_Edit = New System.Windows.Forms.Panel()
+        Me.pnl_Staff_Edit_1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -239,6 +239,21 @@ Partial Class MainPanel
         Me.RoundCornerTextbox26 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox27 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox28 = New wellmeadows.RoundCornerTextbox()
+        Me.pnl_Staff_Edit_2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.RoundCornerTextbox46 = New wellmeadows.RoundCornerTextbox()
+        Me.RoundCornerTextbox51 = New wellmeadows.RoundCornerTextbox()
+        Me.RoundCornerTextbox52 = New wellmeadows.RoundCornerTextbox()
+        Me.RoundCornerTextbox53 = New wellmeadows.RoundCornerTextbox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
         Me.panel_Dashboard.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
@@ -257,7 +272,7 @@ Partial Class MainPanel
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_Staff_Edit.SuspendLayout()
+        Me.pnl_Staff_Edit_1.SuspendLayout()
         Me.panel_Patient_edit.SuspendLayout()
         Me.panel_Ward.SuspendLayout()
         Me.panel_Supplier.SuspendLayout()
@@ -285,6 +300,7 @@ Partial Class MainPanel
         CType(Me.CircularPictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CircularPictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CircularPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_Staff_Edit_2.SuspendLayout()
         Me.SuspendLayout()
         '
         'panel_Dashboard
@@ -696,50 +712,50 @@ Partial Class MainPanel
         Me.PictureBox8.TabIndex = 10
         Me.PictureBox8.TabStop = False
         '
-        'pnl_Staff_Edit
+        'pnl_Staff_Edit_1
         '
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label5)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Button1)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox13)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox14)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox15)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox16)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox9)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox11)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox12)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox5)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox6)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox7)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox8)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox4)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox3)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox2)
-        Me.pnl_Staff_Edit.Controls.Add(Me.RoundCornerTextbox1)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label10)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label11)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label12)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label13)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label14)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label15)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label16)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label17)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label18)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label19)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label20)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label21)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label22)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label23)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label27)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Button2)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label28)
-        Me.pnl_Staff_Edit.Controls.Add(Me.DateTimePicker1)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label29)
-        Me.pnl_Staff_Edit.Controls.Add(Me.Label30)
-        Me.pnl_Staff_Edit.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_Staff_Edit.Location = New System.Drawing.Point(0, 0)
-        Me.pnl_Staff_Edit.Name = "pnl_Staff_Edit"
-        Me.pnl_Staff_Edit.Size = New System.Drawing.Size(1191, 844)
-        Me.pnl_Staff_Edit.TabIndex = 4
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label5)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Button1)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox13)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox14)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox15)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox16)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox9)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox11)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox12)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox5)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox6)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox7)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox8)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox4)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox3)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox2)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.RoundCornerTextbox1)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label10)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label11)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label12)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label13)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label14)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label15)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label16)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label17)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label18)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label19)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label20)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label21)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label22)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label23)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label27)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Button2)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label28)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.DateTimePicker1)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label29)
+        Me.pnl_Staff_Edit_1.Controls.Add(Me.Label30)
+        Me.pnl_Staff_Edit_1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_Staff_Edit_1.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_Staff_Edit_1.Name = "pnl_Staff_Edit_1"
+        Me.pnl_Staff_Edit_1.Size = New System.Drawing.Size(1191, 844)
+        Me.pnl_Staff_Edit_1.TabIndex = 4
         '
         'Button1
         '
@@ -1685,7 +1701,8 @@ Partial Class MainPanel
         '
         'panel_Staff
         '
-        Me.panel_Staff.Controls.Add(Me.pnl_Staff_Edit)
+        Me.panel_Staff.Controls.Add(Me.pnl_Staff_Edit_2)
+        Me.panel_Staff.Controls.Add(Me.pnl_Staff_Edit_1)
         Me.panel_Staff.Controls.Add(Me.pnl_Staff_List)
         Me.panel_Staff.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel_Staff.Location = New System.Drawing.Point(237, 0)
@@ -2684,6 +2701,179 @@ Partial Class MainPanel
         Me.RoundCornerTextbox28.Size = New System.Drawing.Size(294, 30)
         Me.RoundCornerTextbox28.TabIndex = 65
         '
+        'pnl_Staff_Edit_2
+        '
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label55)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label6)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Button13)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox46)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox51)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox52)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox53)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label31)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label32)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label34)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label51)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Button14)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label52)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label54)
+        Me.pnl_Staff_Edit_2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_Staff_Edit_2.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_Staff_Edit_2.Name = "pnl_Staff_Edit_2"
+        Me.pnl_Staff_Edit_2.Size = New System.Drawing.Size(1191, 844)
+        Me.pnl_Staff_Edit_2.TabIndex = 93
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(117, 142)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(26, 20)
+        Me.Label6.TabIndex = 89
+        Me.Label6.Text = "ID"
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button13.BackgroundImage = Global.wellmeadows.My.Resources.Resources.login_button1
+        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button13.Location = New System.Drawing.Point(554, 736)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(170, 55)
+        Me.Button13.TabIndex = 86
+        Me.Button13.Text = "ADD"
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'RoundCornerTextbox46
+        '
+        Me.RoundCornerTextbox46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox46.Location = New System.Drawing.Point(697, 129)
+        Me.RoundCornerTextbox46.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox46.Name = "RoundCornerTextbox46"
+        Me.RoundCornerTextbox46.Size = New System.Drawing.Size(188, 30)
+        Me.RoundCornerTextbox46.TabIndex = 64
+        '
+        'RoundCornerTextbox51
+        '
+        Me.RoundCornerTextbox51.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox51.Location = New System.Drawing.Point(936, 178)
+        Me.RoundCornerTextbox51.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox51.Name = "RoundCornerTextbox51"
+        Me.RoundCornerTextbox51.Size = New System.Drawing.Size(180, 30)
+        Me.RoundCornerTextbox51.TabIndex = 58
+        '
+        'RoundCornerTextbox52
+        '
+        Me.RoundCornerTextbox52.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox52.Location = New System.Drawing.Point(469, 218)
+        Me.RoundCornerTextbox52.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox52.Name = "RoundCornerTextbox52"
+        Me.RoundCornerTextbox52.Size = New System.Drawing.Size(216, 30)
+        Me.RoundCornerTextbox52.TabIndex = 57
+        '
+        'RoundCornerTextbox53
+        '
+        Me.RoundCornerTextbox53.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox53.Location = New System.Drawing.Point(621, 672)
+        Me.RoundCornerTextbox53.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox53.Name = "RoundCornerTextbox53"
+        Me.RoundCornerTextbox53.Size = New System.Drawing.Size(190, 30)
+        Me.RoundCornerTextbox53.TabIndex = 56
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(650, 137)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(36, 20)
+        Me.Label31.TabIndex = 75
+        Me.Label31.Text = "NIN"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(936, 141)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(47, 20)
+        Me.Label32.TabIndex = 74
+        Me.Label32.Text = "Ward"
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(1245, 553)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(190, 20)
+        Me.Label34.TabIndex = 73
+        Me.Label34.Text = "Permanent_or_temporary"
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label51.Location = New System.Drawing.Point(76, 96)
+        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(132, 25)
+        Me.Label51.TabIndex = 88
+        Me.Label51.Text = "Qualification"
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button14.BackgroundImage = Global.wellmeadows.My.Resources.Resources.login_button1
+        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button14.Location = New System.Drawing.Point(333, 748)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(170, 55)
+        Me.Button14.TabIndex = 87
+        Me.Button14.Text = "NEXT"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Inter", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(338, 15)
+        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(473, 61)
+        Me.Label52.TabIndex = 85
+        Me.Label52.Text = "STAFF MANAGEMENT"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Location = New System.Drawing.Point(394, 225)
+        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(68, 20)
+        Me.Label54.TabIndex = 80
+        Me.Label54.Text = "Address"
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label55.Location = New System.Drawing.Point(87, 267)
+        Me.Label55.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(177, 25)
+        Me.Label55.TabIndex = 90
+        Me.Label55.Text = "Work Experience"
+        '
         'MainPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -2712,8 +2902,8 @@ Partial Class MainPanel
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_Staff_Edit.ResumeLayout(False)
-        Me.pnl_Staff_Edit.PerformLayout()
+        Me.pnl_Staff_Edit_1.ResumeLayout(False)
+        Me.pnl_Staff_Edit_1.PerformLayout()
         Me.panel_Patient_edit.ResumeLayout(False)
         Me.panel_Patient_edit.PerformLayout()
         Me.panel_Ward.ResumeLayout(False)
@@ -2749,6 +2939,8 @@ Partial Class MainPanel
         CType(Me.CircularPictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CircularPictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CircularPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_Staff_Edit_2.ResumeLayout(False)
+        Me.pnl_Staff_Edit_2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2774,7 +2966,7 @@ Partial Class MainPanel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents pnl_Staff_Edit As Panel
+    Friend WithEvents pnl_Staff_Edit_1 As Panel
     Friend WithEvents panel_Patient_edit As Panel
     Friend WithEvents panel_Ward As Panel
     Friend WithEvents panel_Supplier As Panel
@@ -2965,4 +3157,19 @@ Partial Class MainPanel
     Friend WithEvents ExperienceFinishDate As DataGridViewTextBoxColumn
     Friend WithEvents ExperienceOrganization As DataGridViewTextBoxColumn
     Friend WithEvents Label5 As Label
+    Friend WithEvents pnl_Staff_Edit_2 As Panel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Button13 As Button
+    Friend WithEvents RoundCornerTextbox46 As RoundCornerTextbox
+    Friend WithEvents RoundCornerTextbox51 As RoundCornerTextbox
+    Friend WithEvents RoundCornerTextbox52 As RoundCornerTextbox
+    Friend WithEvents RoundCornerTextbox53 As RoundCornerTextbox
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label34 As Label
+    Friend WithEvents Label51 As Label
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Label52 As Label
+    Friend WithEvents Label54 As Label
+    Friend WithEvents Label55 As Label
 End Class
