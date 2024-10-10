@@ -1,0 +1,8 @@
+# Ignore Visual Studio and .vs folder files
+.vs/
+*.suo
+
+# Ignore Debug build files
+wellmeadows/obj/Debug/
+*.cache
+*.FileListAbsolute.txt
