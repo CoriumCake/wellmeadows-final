@@ -58,6 +58,7 @@ Partial Class MainPanel
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.pnl_Staff_Edit_1 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -135,6 +136,17 @@ Partial Class MainPanel
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Main = New System.Windows.Forms.Panel()
         Me.panel_Staff = New System.Windows.Forms.Panel()
+        Me.pnl_Staff_Edit_2 = New System.Windows.Forms.Panel()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
         Me.pnl_Staff_List = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -193,7 +205,10 @@ Partial Class MainPanel
         Me.STAFFTableAdapter = New wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.STAFFTableAdapter()
         Me.PatientsTableAdapter = New wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.PatientsTableAdapter()
         Me.VwStaffFullDetailsTableAdapter = New wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.vwStaffFullDetailsTableAdapter()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.RoundCornerTextbox46 = New wellmeadows.RoundCornerTextbox()
+        Me.RoundCornerTextbox51 = New wellmeadows.RoundCornerTextbox()
+        Me.RoundCornerTextbox52 = New wellmeadows.RoundCornerTextbox()
+        Me.RoundCornerTextbox53 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox13 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox14 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox15 = New wellmeadows.RoundCornerTextbox()
@@ -239,21 +254,6 @@ Partial Class MainPanel
         Me.RoundCornerTextbox26 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox27 = New wellmeadows.RoundCornerTextbox()
         Me.RoundCornerTextbox28 = New wellmeadows.RoundCornerTextbox()
-        Me.pnl_Staff_Edit_2 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.RoundCornerTextbox46 = New wellmeadows.RoundCornerTextbox()
-        Me.RoundCornerTextbox51 = New wellmeadows.RoundCornerTextbox()
-        Me.RoundCornerTextbox52 = New wellmeadows.RoundCornerTextbox()
-        Me.RoundCornerTextbox53 = New wellmeadows.RoundCornerTextbox()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label55 = New System.Windows.Forms.Label()
         Me.panel_Dashboard.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
@@ -283,6 +283,7 @@ Partial Class MainPanel
         Me.TableLayoutPanel7.SuspendLayout()
         Me.Main.SuspendLayout()
         Me.panel_Staff.SuspendLayout()
+        Me.pnl_Staff_Edit_2.SuspendLayout()
         Me.pnl_Staff_List.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.staff_list_grid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -300,7 +301,6 @@ Partial Class MainPanel
         CType(Me.CircularPictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CircularPictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CircularPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_Staff_Edit_2.SuspendLayout()
         Me.SuspendLayout()
         '
         'panel_Dashboard
@@ -309,18 +309,20 @@ Partial Class MainPanel
         Me.panel_Dashboard.Controls.Add(Me.Panel2)
         Me.panel_Dashboard.Controls.Add(Me.TableLayoutPanel4)
         Me.panel_Dashboard.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Dashboard.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Dashboard.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Dashboard.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Dashboard.Name = "panel_Dashboard"
-        Me.panel_Dashboard.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Dashboard.Size = New System.Drawing.Size(902, 549)
         Me.panel_Dashboard.TabIndex = 0
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.TableLayoutPanel8)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 110)
+        Me.Panel2.Location = New System.Drawing.Point(0, 72)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1191, 734)
+        Me.Panel2.Size = New System.Drawing.Size(902, 477)
         Me.Panel2.TabIndex = 8
         '
         'TableLayoutPanel8
@@ -328,32 +330,35 @@ Partial Class MainPanel
         Me.TableLayoutPanel8.ColumnCount = 3
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 379.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.Panel3, 0, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.Chart1, 1, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 3
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.33852!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.66148!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 220.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(1191, 734)
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 143.0!))
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(902, 477)
         Me.TableLayoutPanel8.TabIndex = 1
         '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.MonthCalendar1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(3, 3)
+        Me.Panel3.Location = New System.Drawing.Point(2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(400, 299)
+        Me.Panel3.Size = New System.Drawing.Size(320, 194)
         Me.Panel3.TabIndex = 1
         '
         'MonthCalendar1
         '
         Me.MonthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.MonthCalendar1.Location = New System.Drawing.Point(39, 23)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(53, 15)
+        Me.MonthCalendar1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 0
         '
@@ -364,13 +369,14 @@ Partial Class MainPanel
         Me.Chart1.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(415, 3)
+        Me.Chart1.Location = New System.Drawing.Point(356, 2)
+        Me.Chart1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Chart1.Name = "Chart1"
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(388, 299)
+        Me.Chart1.Size = New System.Drawing.Size(259, 194)
         Me.Chart1.TabIndex = 2
         Me.Chart1.Text = "Chart1"
         '
@@ -380,55 +386,56 @@ Partial Class MainPanel
         Me.TableLayoutPanel4.ColumnCount = 4
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.62567!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.37433!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154.0!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.CircularPictureBox1, 3, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.dbposition, 2, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.dbfullname, 2, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53.0!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1191, 110)
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34.0!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(902, 72)
         Me.TableLayoutPanel4.TabIndex = 7
         '
         'Label2
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Inter", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(20, 0)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(13, 20)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(13, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.TableLayoutPanel4.SetRowSpan(Me.Label2, 2)
-        Me.Label2.Size = New System.Drawing.Size(213, 110)
+        Me.Label2.Size = New System.Drawing.Size(156, 31)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Dashboard"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'dbposition
         '
-        Me.dbposition.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dbposition.Location = New System.Drawing.Point(855, 57)
+        Me.dbposition.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dbposition.Location = New System.Drawing.Point(676, 38)
         Me.dbposition.Margin = New System.Windows.Forms.Padding(0)
         Me.dbposition.Name = "dbposition"
-        Me.dbposition.Size = New System.Drawing.Size(154, 53)
+        Me.dbposition.Size = New System.Drawing.Size(103, 34)
         Me.dbposition.TabIndex = 7
         Me.dbposition.Text = "Doctor"
         Me.dbposition.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'dbfullname
         '
-        Me.dbfullname.Font = New System.Drawing.Font("Inter", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dbfullname.Location = New System.Drawing.Point(855, 0)
+        Me.dbfullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dbfullname.Location = New System.Drawing.Point(676, 0)
         Me.dbfullname.Margin = New System.Windows.Forms.Padding(0)
         Me.dbfullname.Name = "dbfullname"
-        Me.dbfullname.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.dbfullname.Size = New System.Drawing.Size(148, 57)
+        Me.dbfullname.Padding = New System.Windows.Forms.Padding(7, 0, 0, 0)
+        Me.dbfullname.Size = New System.Drawing.Size(99, 37)
         Me.dbfullname.TabIndex = 6
         Me.dbfullname.Text = "Name"
         Me.dbfullname.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -439,8 +446,9 @@ Partial Class MainPanel
         Me.pnlsidebar.Controls.Add(Me.TableLayoutPanel1)
         Me.pnlsidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlsidebar.Location = New System.Drawing.Point(0, 0)
+        Me.pnlsidebar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlsidebar.Name = "pnlsidebar"
-        Me.pnlsidebar.Size = New System.Drawing.Size(237, 844)
+        Me.pnlsidebar.Size = New System.Drawing.Size(158, 549)
         Me.pnlsidebar.TabIndex = 2
         '
         'TableLayoutPanel1
@@ -468,6 +476,7 @@ Partial Class MainPanel
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox8, 0, 7)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 12
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.01852!))
@@ -482,18 +491,19 @@ Partial Class MainPanel
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.886256!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.109005!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.91469!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(251, 844)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(167, 549)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'lblhelp
         '
         Me.lblhelp.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblhelp.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblhelp.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblhelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblhelp.ForeColor = System.Drawing.Color.White
-        Me.lblhelp.Location = New System.Drawing.Point(59, 681)
+        Me.lblhelp.Location = New System.Drawing.Point(39, 437)
+        Me.lblhelp.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblhelp.Name = "lblhelp"
-        Me.lblhelp.Size = New System.Drawing.Size(165, 47)
+        Me.lblhelp.Size = New System.Drawing.Size(110, 31)
         Me.lblhelp.TabIndex = 8
         Me.lblhelp.Text = "Help"
         Me.lblhelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -502,10 +512,10 @@ Partial Class MainPanel
         '
         Me.PictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox10.Image = Global.wellmeadows.My.Resources.Resources.appointment
-        Me.PictureBox10.Location = New System.Drawing.Point(18, 688)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox10.Location = New System.Drawing.Point(12, 442)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox10.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 11
         Me.PictureBox10.TabStop = False
@@ -514,10 +524,10 @@ Partial Class MainPanel
         '
         Me.PictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox9.Image = Global.wellmeadows.My.Resources.Resources.logout
-        Me.PictureBox9.Location = New System.Drawing.Point(18, 622)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox9.Location = New System.Drawing.Point(12, 399)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox9.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 11
         Me.PictureBox9.TabStop = False
@@ -526,10 +536,10 @@ Partial Class MainPanel
         '
         Me.PictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox7.Image = Global.wellmeadows.My.Resources.Resources.supplier
-        Me.PictureBox7.Location = New System.Drawing.Point(18, 398)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox7.Location = New System.Drawing.Point(12, 255)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox7.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 10
         Me.PictureBox7.TabStop = False
@@ -538,10 +548,10 @@ Partial Class MainPanel
         '
         Me.PictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox6.Image = Global.wellmeadows.My.Resources.Resources.ward
-        Me.PictureBox6.Location = New System.Drawing.Point(18, 331)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox6.Location = New System.Drawing.Point(12, 212)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox6.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 10
         Me.PictureBox6.TabStop = False
@@ -550,11 +560,12 @@ Partial Class MainPanel
         '
         Me.lbldashboard.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbldashboard.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbldashboard.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbldashboard.ForeColor = System.Drawing.Color.White
-        Me.lbldashboard.Location = New System.Drawing.Point(59, 123)
+        Me.lbldashboard.Location = New System.Drawing.Point(39, 78)
+        Me.lbldashboard.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbldashboard.Name = "lbldashboard"
-        Me.lbldashboard.Size = New System.Drawing.Size(165, 47)
+        Me.lbldashboard.Size = New System.Drawing.Size(110, 31)
         Me.lbldashboard.TabIndex = 1
         Me.lbldashboard.Text = "DASHBOARD"
         Me.lbldashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -563,11 +574,12 @@ Partial Class MainPanel
         '
         Me.lblstaff.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblstaff.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblstaff.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblstaff.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblstaff.ForeColor = System.Drawing.Color.White
-        Me.lblstaff.Location = New System.Drawing.Point(59, 190)
+        Me.lblstaff.Location = New System.Drawing.Point(39, 121)
+        Me.lblstaff.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblstaff.Name = "lblstaff"
-        Me.lblstaff.Size = New System.Drawing.Size(165, 47)
+        Me.lblstaff.Size = New System.Drawing.Size(110, 31)
         Me.lblstaff.TabIndex = 2
         Me.lblstaff.Text = "STAFF"
         Me.lblstaff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -576,11 +588,12 @@ Partial Class MainPanel
         '
         Me.lblpatient.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblpatient.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblpatient.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpatient.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblpatient.ForeColor = System.Drawing.Color.White
-        Me.lblpatient.Location = New System.Drawing.Point(59, 257)
+        Me.lblpatient.Location = New System.Drawing.Point(39, 164)
+        Me.lblpatient.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblpatient.Name = "lblpatient"
-        Me.lblpatient.Size = New System.Drawing.Size(165, 47)
+        Me.lblpatient.Size = New System.Drawing.Size(110, 31)
         Me.lblpatient.TabIndex = 3
         Me.lblpatient.Text = "PATIENT"
         Me.lblpatient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -589,11 +602,12 @@ Partial Class MainPanel
         '
         Me.lblward.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblward.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblward.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblward.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblward.ForeColor = System.Drawing.Color.White
-        Me.lblward.Location = New System.Drawing.Point(59, 324)
+        Me.lblward.Location = New System.Drawing.Point(39, 207)
+        Me.lblward.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblward.Name = "lblward"
-        Me.lblward.Size = New System.Drawing.Size(165, 47)
+        Me.lblward.Size = New System.Drawing.Size(110, 31)
         Me.lblward.TabIndex = 4
         Me.lblward.Text = "WARD"
         Me.lblward.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -602,11 +616,12 @@ Partial Class MainPanel
         '
         Me.lblsupplier.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblsupplier.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblsupplier.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsupplier.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsupplier.ForeColor = System.Drawing.Color.White
-        Me.lblsupplier.Location = New System.Drawing.Point(59, 391)
+        Me.lblsupplier.Location = New System.Drawing.Point(39, 250)
+        Me.lblsupplier.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblsupplier.Name = "lblsupplier"
-        Me.lblsupplier.Size = New System.Drawing.Size(165, 47)
+        Me.lblsupplier.Size = New System.Drawing.Size(110, 31)
         Me.lblsupplier.TabIndex = 5
         Me.lblsupplier.Text = "SUPPLIER"
         Me.lblsupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -615,11 +630,12 @@ Partial Class MainPanel
         '
         Me.lblappoint.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lblappoint.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblappoint.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblappoint.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblappoint.ForeColor = System.Drawing.Color.White
-        Me.lblappoint.Location = New System.Drawing.Point(59, 450)
+        Me.lblappoint.Location = New System.Drawing.Point(39, 288)
+        Me.lblappoint.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblappoint.Name = "lblappoint"
-        Me.lblappoint.Size = New System.Drawing.Size(178, 62)
+        Me.lblappoint.Size = New System.Drawing.Size(119, 40)
         Me.lblappoint.TabIndex = 6
         Me.lblappoint.Text = "APPOINTMENT"
         Me.lblappoint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -628,11 +644,12 @@ Partial Class MainPanel
         '
         Me.lbllogout.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.lbllogout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lbllogout.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbllogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbllogout.ForeColor = System.Drawing.Color.White
-        Me.lbllogout.Location = New System.Drawing.Point(59, 614)
+        Me.lbllogout.Location = New System.Drawing.Point(39, 394)
+        Me.lbllogout.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbllogout.Name = "lbllogout"
-        Me.lbllogout.Size = New System.Drawing.Size(165, 47)
+        Me.lbllogout.Size = New System.Drawing.Size(110, 31)
         Me.lbllogout.TabIndex = 7
         Me.lbllogout.Text = "Logout"
         Me.lbllogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -642,10 +659,10 @@ Partial Class MainPanel
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TableLayoutPanel1.SetColumnSpan(Me.PictureBox2, 2)
         Me.PictureBox2.Image = Global.wellmeadows.My.Resources.Resources.line
-        Me.PictureBox2.Location = New System.Drawing.Point(23, 535)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(0, 3, 3, 3)
+        Me.PictureBox2.Location = New System.Drawing.Point(15, 343)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(0, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(201, 46)
+        Me.PictureBox2.Size = New System.Drawing.Size(134, 30)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
@@ -655,10 +672,10 @@ Partial Class MainPanel
         Me.PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox3.Image = Global.wellmeadows.My.Resources.Resources.dashboard
-        Me.PictureBox3.Location = New System.Drawing.Point(18, 130)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox3.Location = New System.Drawing.Point(12, 83)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox3.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 9
         Me.PictureBox3.TabStop = False
@@ -667,10 +684,10 @@ Partial Class MainPanel
         '
         Me.PictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox5.Image = Global.wellmeadows.My.Resources.Resources.patient
-        Me.PictureBox5.Location = New System.Drawing.Point(18, 264)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox5.Location = New System.Drawing.Point(12, 169)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox5.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 10
         Me.PictureBox5.TabStop = False
@@ -679,10 +696,10 @@ Partial Class MainPanel
         '
         Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox4.Image = Global.wellmeadows.My.Resources.Resources.staff
-        Me.PictureBox4.Location = New System.Drawing.Point(18, 198)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox4.Location = New System.Drawing.Point(12, 126)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(32, 30)
+        Me.PictureBox4.Size = New System.Drawing.Size(21, 20)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 10
         Me.PictureBox4.TabStop = False
@@ -693,9 +710,10 @@ Partial Class MainPanel
         Me.TableLayoutPanel1.SetColumnSpan(Me.PictureBox1, 2)
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.wellmeadows.My.Resources.Resources.banner
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 6)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(212, 90)
+        Me.PictureBox1.Size = New System.Drawing.Size(141, 58)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
@@ -704,10 +722,10 @@ Partial Class MainPanel
         '
         Me.PictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox8.Image = Global.wellmeadows.My.Resources.Resources.appointment
-        Me.PictureBox8.Location = New System.Drawing.Point(18, 465)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.PictureBox8.Location = New System.Drawing.Point(12, 298)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(10, 2, 2, 2)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox8.Size = New System.Drawing.Size(21, 21)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 10
         Me.PictureBox8.TabStop = False
@@ -753,9 +771,19 @@ Partial Class MainPanel
         Me.pnl_Staff_Edit_1.Controls.Add(Me.Label30)
         Me.pnl_Staff_Edit_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_Staff_Edit_1.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_Staff_Edit_1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_Staff_Edit_1.Name = "pnl_Staff_Edit_1"
-        Me.pnl_Staff_Edit_1.Size = New System.Drawing.Size(1191, 844)
+        Me.pnl_Staff_Edit_1.Size = New System.Drawing.Size(902, 549)
         Me.pnl_Staff_Edit_1.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(263, 88)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(18, 13)
+        Me.Label5.TabIndex = 89
+        Me.Label5.Text = "ID"
         '
         'Button1
         '
@@ -765,10 +793,10 @@ Partial Class MainPanel
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(554, 736)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button1.Location = New System.Drawing.Point(369, 478)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(170, 55)
+        Me.Button1.Size = New System.Drawing.Size(113, 36)
         Me.Button1.TabIndex = 86
         Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = False
@@ -776,140 +804,126 @@ Partial Class MainPanel
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(80, 626)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(53, 407)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(53, 20)
+        Me.Label10.Size = New System.Drawing.Size(36, 13)
         Me.Label10.TabIndex = 79
         Me.Label10.Text = "Salary"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(88, 369)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Location = New System.Drawing.Point(59, 240)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(107, 20)
+        Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 78
         Me.Label11.Text = "Date_of_birth"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(1034, 649)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(689, 422)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(87, 20)
+        Me.Label12.Size = New System.Drawing.Size(60, 13)
         Me.Label12.TabIndex = 77
         Me.Label12.Text = "hour_week"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(879, 385)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Location = New System.Drawing.Point(586, 250)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(65, 20)
+        Me.Label13.Size = New System.Drawing.Size(44, 13)
         Me.Label13.TabIndex = 76
         Me.Label13.Text = "Position"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(806, 649)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Location = New System.Drawing.Point(537, 422)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(173, 20)
+        Me.Label14.Size = New System.Drawing.Size(117, 13)
         Me.Label14.TabIndex = 72
         Me.Label14.Text = "Paid_monthly_or_week"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(650, 137)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Location = New System.Drawing.Point(433, 89)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(36, 20)
+        Me.Label15.Size = New System.Drawing.Size(26, 13)
         Me.Label15.TabIndex = 75
         Me.Label15.Text = "NIN"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(936, 141)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Location = New System.Drawing.Point(624, 92)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(47, 20)
+        Me.Label16.Size = New System.Drawing.Size(33, 13)
         Me.Label16.TabIndex = 74
         Me.Label16.Text = "Ward"
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(1245, 553)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Location = New System.Drawing.Point(830, 359)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(190, 20)
+        Me.Label17.Size = New System.Drawing.Size(125, 13)
         Me.Label17.TabIndex = 73
         Me.Label17.Text = "Permanent_or_temporary"
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(1034, 541)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Location = New System.Drawing.Point(689, 352)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(117, 20)
+        Me.Label18.Size = New System.Drawing.Size(77, 13)
         Me.Label18.TabIndex = 71
         Me.Label18.Text = "AppointmentID"
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(490, 305)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Location = New System.Drawing.Point(327, 198)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(82, 20)
+        Me.Label19.Size = New System.Drawing.Size(55, 13)
         Me.Label19.TabIndex = 70
         Me.Label19.Text = "LastName"
         '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(88, 303)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Location = New System.Drawing.Point(59, 197)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(82, 20)
+        Me.Label20.Size = New System.Drawing.Size(54, 13)
         Me.Label20.TabIndex = 69
         Me.Label20.Text = "FirstName"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(801, 544)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label21.Location = New System.Drawing.Point(534, 354)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(61, 20)
+        Me.Label21.Size = New System.Drawing.Size(40, 13)
         Me.Label21.TabIndex = 68
         Me.Label21.Text = "StaffID"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(533, 369)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label22.Location = New System.Drawing.Point(355, 240)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(36, 20)
+        Me.Label22.Size = New System.Drawing.Size(25, 13)
         Me.Label22.TabIndex = 82
         Me.Label22.Text = "Sex"
         '
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(177, 449)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Location = New System.Drawing.Point(118, 292)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(118, 20)
+        Me.Label23.Size = New System.Drawing.Size(79, 13)
         Me.Label23.TabIndex = 81
         Me.Label23.Text = "Phone_number"
         '
@@ -917,10 +931,9 @@ Partial Class MainPanel
         '
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label27.Location = New System.Drawing.Point(76, 96)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label27.Location = New System.Drawing.Point(51, 62)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(209, 25)
+        Me.Label27.Size = New System.Drawing.Size(149, 16)
         Me.Label27.TabIndex = 88
         Me.Label27.Text = "Personal information"
         '
@@ -932,10 +945,10 @@ Partial Class MainPanel
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(333, 748)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button2.Location = New System.Drawing.Point(222, 486)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(170, 55)
+        Me.Button2.Size = New System.Drawing.Size(113, 36)
         Me.Button2.TabIndex = 87
         Me.Button2.Text = "NEXT"
         Me.Button2.UseVisualStyleBackColor = False
@@ -943,39 +956,35 @@ Partial Class MainPanel
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Inter", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(338, 15)
-        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(225, 10)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(473, 61)
+        Me.Label28.Size = New System.Drawing.Size(311, 32)
         Me.Label28.TabIndex = 85
         Me.Label28.Text = "STAFF MANAGEMENT"
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(210, 364)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(140, 237)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(210, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(141, 20)
         Me.DateTimePicker1.TabIndex = 84
         '
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(346, 626)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label29.Location = New System.Drawing.Point(231, 407)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(102, 20)
+        Me.Label29.Size = New System.Drawing.Size(69, 13)
         Me.Label29.TabIndex = 83
         Me.Label29.Text = "Salary_Scale"
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(394, 225)
-        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label30.Location = New System.Drawing.Point(263, 146)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(68, 20)
+        Me.Label30.Size = New System.Drawing.Size(45, 13)
         Me.Label30.TabIndex = 80
         Me.Label30.Text = "Address"
         '
@@ -1004,8 +1013,9 @@ Partial Class MainPanel
         Me.panel_Patient_edit.Controls.Add(Me.Label48)
         Me.panel_Patient_edit.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel_Patient_edit.Location = New System.Drawing.Point(0, 0)
+        Me.panel_Patient_edit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Patient_edit.Name = "panel_Patient_edit"
-        Me.panel_Patient_edit.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Patient_edit.Size = New System.Drawing.Size(902, 549)
         Me.panel_Patient_edit.TabIndex = 5
         '
         'Button3
@@ -1016,10 +1026,10 @@ Partial Class MainPanel
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(912, 639)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button3.Location = New System.Drawing.Point(608, 415)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(170, 55)
+        Me.Button3.Size = New System.Drawing.Size(113, 36)
         Me.Button3.TabIndex = 64
         Me.Button3.Text = "NEXT"
         Me.Button3.UseVisualStyleBackColor = False
@@ -1032,37 +1042,35 @@ Partial Class MainPanel
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(1121, 639)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button4.Location = New System.Drawing.Point(747, 415)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(170, 55)
+        Me.Button4.Size = New System.Drawing.Size(113, 36)
         Me.Button4.TabIndex = 63
         Me.Button4.Text = "ADD"
         Me.Button4.UseVisualStyleBackColor = False
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(938, 415)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(625, 270)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(298, 26)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker2.TabIndex = 62
         '
         'DateTimePicker3
         '
-        Me.DateTimePicker3.Location = New System.Drawing.Point(456, 416)
-        Me.DateTimePicker3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DateTimePicker3.Location = New System.Drawing.Point(304, 270)
         Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(298, 26)
+        Me.DateTimePicker3.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker3.TabIndex = 61
         '
         'Label39
         '
         Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(932, 126)
-        Me.Label39.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label39.Location = New System.Drawing.Point(621, 82)
+        Me.Label39.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(150, 48)
+        Me.Label39.Size = New System.Drawing.Size(100, 31)
         Me.Label39.TabIndex = 53
         Me.Label39.Text = "Staff ID"
         Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1070,10 +1078,10 @@ Partial Class MainPanel
         'Label40
         '
         Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(947, 360)
-        Me.Label40.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label40.Location = New System.Drawing.Point(631, 234)
+        Me.Label40.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(150, 48)
+        Me.Label40.Size = New System.Drawing.Size(100, 31)
         Me.Label40.TabIndex = 52
         Me.Label40.Text = "Date Register"
         Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1081,10 +1089,10 @@ Partial Class MainPanel
         'Label41
         '
         Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(464, 480)
-        Me.Label41.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label41.Location = New System.Drawing.Point(309, 312)
+        Me.Label41.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(150, 48)
+        Me.Label41.Size = New System.Drawing.Size(100, 31)
         Me.Label41.TabIndex = 51
         Me.Label41.Text = "Address"
         Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1092,10 +1100,10 @@ Partial Class MainPanel
         'Label42
         '
         Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.Location = New System.Drawing.Point(464, 606)
-        Me.Label42.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label42.Location = New System.Drawing.Point(309, 394)
+        Me.Label42.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(150, 48)
+        Me.Label42.Size = New System.Drawing.Size(100, 31)
         Me.Label42.TabIndex = 50
         Me.Label42.Text = "Sex"
         Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1103,10 +1111,10 @@ Partial Class MainPanel
         'Label43
         '
         Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.Location = New System.Drawing.Point(464, 361)
-        Me.Label43.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label43.Location = New System.Drawing.Point(309, 235)
+        Me.Label43.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(150, 48)
+        Me.Label43.Size = New System.Drawing.Size(100, 31)
         Me.Label43.TabIndex = 49
         Me.Label43.Text = "Date of Birth"
         Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1114,10 +1122,10 @@ Partial Class MainPanel
         'Label44
         '
         Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.Location = New System.Drawing.Point(947, 244)
-        Me.Label44.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label44.Location = New System.Drawing.Point(631, 159)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(150, 48)
+        Me.Label44.Size = New System.Drawing.Size(100, 31)
         Me.Label44.TabIndex = 48
         Me.Label44.Text = "Lastname"
         Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1125,10 +1133,10 @@ Partial Class MainPanel
         'Label45
         '
         Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.Location = New System.Drawing.Point(947, 479)
-        Me.Label45.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label45.Location = New System.Drawing.Point(631, 311)
+        Me.Label45.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(150, 48)
+        Me.Label45.Size = New System.Drawing.Size(100, 31)
         Me.Label45.TabIndex = 47
         Me.Label45.Text = "Phone"
         Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1136,10 +1144,10 @@ Partial Class MainPanel
         'Label46
         '
         Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(464, 245)
-        Me.Label46.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label46.Location = New System.Drawing.Point(309, 159)
+        Me.Label46.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(150, 48)
+        Me.Label46.Size = New System.Drawing.Size(100, 31)
         Me.Label46.TabIndex = 46
         Me.Label46.Text = "First Name"
         Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1147,10 +1155,10 @@ Partial Class MainPanel
         'Label47
         '
         Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(464, 127)
-        Me.Label47.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label47.Location = New System.Drawing.Point(309, 83)
+        Me.Label47.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(150, 48)
+        Me.Label47.Size = New System.Drawing.Size(100, 31)
         Me.Label47.TabIndex = 45
         Me.Label47.Text = "Patient ID"
         Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1159,9 +1167,10 @@ Partial Class MainPanel
         '
         Me.Label48.BackColor = System.Drawing.Color.Transparent
         Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label48.Location = New System.Drawing.Point(600, 30)
+        Me.Label48.Location = New System.Drawing.Point(400, 20)
+        Me.Label48.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(513, 62)
+        Me.Label48.Size = New System.Drawing.Size(342, 40)
         Me.Label48.TabIndex = 44
         Me.Label48.Text = "Patient Management"
         Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1182,9 +1191,10 @@ Partial Class MainPanel
         Me.panel_Ward.Controls.Add(Me.RoundCornerTextbox28)
         Me.panel_Ward.Controls.Add(Me.Label62)
         Me.panel_Ward.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Ward.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Ward.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Ward.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Ward.Name = "panel_Ward"
-        Me.panel_Ward.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Ward.Size = New System.Drawing.Size(902, 549)
         Me.panel_Ward.TabIndex = 4
         '
         'Button5
@@ -1195,10 +1205,10 @@ Partial Class MainPanel
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(883, 650)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button5.Location = New System.Drawing.Point(589, 422)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(170, 55)
+        Me.Button5.Size = New System.Drawing.Size(113, 36)
         Me.Button5.TabIndex = 68
         Me.Button5.Text = "NEXT"
         Me.Button5.UseVisualStyleBackColor = False
@@ -1211,10 +1221,10 @@ Partial Class MainPanel
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(677, 650)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button6.Location = New System.Drawing.Point(451, 422)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(170, 55)
+        Me.Button6.Size = New System.Drawing.Size(113, 36)
         Me.Button6.TabIndex = 67
         Me.Button6.Text = "ADD"
         Me.Button6.UseVisualStyleBackColor = False
@@ -1222,10 +1232,10 @@ Partial Class MainPanel
         'Label57
         '
         Me.Label57.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label57.Location = New System.Drawing.Point(549, 165)
-        Me.Label57.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label57.Location = New System.Drawing.Point(366, 107)
+        Me.Label57.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(150, 48)
+        Me.Label57.Size = New System.Drawing.Size(100, 31)
         Me.Label57.TabIndex = 57
         Me.Label57.Text = "Ward ID"
         Me.Label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1234,9 +1244,10 @@ Partial Class MainPanel
         '
         Me.Label58.BackColor = System.Drawing.Color.Transparent
         Me.Label58.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label58.Location = New System.Drawing.Point(448, 38)
+        Me.Label58.Location = New System.Drawing.Point(299, 25)
+        Me.Label58.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(801, 62)
+        Me.Label58.Size = New System.Drawing.Size(534, 40)
         Me.Label58.TabIndex = 56
         Me.Label58.Text = "Ward Management"
         Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1244,10 +1255,10 @@ Partial Class MainPanel
         'Label59
         '
         Me.Label59.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label59.Location = New System.Drawing.Point(880, 165)
-        Me.Label59.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label59.Location = New System.Drawing.Point(587, 107)
+        Me.Label59.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(150, 48)
+        Me.Label59.Size = New System.Drawing.Size(100, 31)
         Me.Label59.TabIndex = 58
         Me.Label59.Text = "Phone"
         Me.Label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1255,10 +1266,10 @@ Partial Class MainPanel
         'Label60
         '
         Me.Label60.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label60.Location = New System.Drawing.Point(549, 321)
-        Me.Label60.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label60.Location = New System.Drawing.Point(366, 209)
+        Me.Label60.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(150, 48)
+        Me.Label60.Size = New System.Drawing.Size(100, 31)
         Me.Label60.TabIndex = 61
         Me.Label60.Text = "Ward Name"
         Me.Label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1266,10 +1277,10 @@ Partial Class MainPanel
         'Label61
         '
         Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label61.Location = New System.Drawing.Point(927, 467)
-        Me.Label61.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label61.Location = New System.Drawing.Point(618, 304)
+        Me.Label61.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(150, 48)
+        Me.Label61.Size = New System.Drawing.Size(100, 31)
         Me.Label61.TabIndex = 60
         Me.Label61.Text = "Bed number"
         Me.Label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1277,10 +1288,10 @@ Partial Class MainPanel
         'Label62
         '
         Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label62.Location = New System.Drawing.Point(548, 467)
-        Me.Label62.Margin = New System.Windows.Forms.Padding(40, 0, 3, 0)
+        Me.Label62.Location = New System.Drawing.Point(365, 304)
+        Me.Label62.Margin = New System.Windows.Forms.Padding(27, 0, 2, 0)
         Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(150, 48)
+        Me.Label62.Size = New System.Drawing.Size(100, 31)
         Me.Label62.TabIndex = 59
         Me.Label62.Text = "Ward location"
         Me.Label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1317,63 +1328,59 @@ Partial Class MainPanel
         Me.panel_Supplier.Controls.Add(Me.RoundCornerTextbox39)
         Me.panel_Supplier.Controls.Add(Me.RoundCornerTextbox40)
         Me.panel_Supplier.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Supplier.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Supplier.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Supplier.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Supplier.Name = "panel_Supplier"
-        Me.panel_Supplier.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Supplier.Size = New System.Drawing.Size(902, 549)
         Me.panel_Supplier.TabIndex = 4
         '
         'Label71
         '
         Me.Label71.AutoSize = True
         Me.Label71.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label71.Location = New System.Drawing.Point(438, 268)
-        Me.Label71.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label71.Location = New System.Drawing.Point(77, 137)
         Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(123, 25)
+        Me.Label71.Size = New System.Drawing.Size(89, 17)
         Me.Label71.TabIndex = 70
-        Me.Label71.Text = "Supplier_ID"
+        Me.Label71.Text = "Supplier_ID :"
         '
         'Label72
         '
         Me.Label72.AutoSize = True
         Me.Label72.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label72.Location = New System.Drawing.Point(632, 270)
-        Me.Label72.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label72.Location = New System.Drawing.Point(335, 142)
         Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(123, 25)
+        Me.Label72.Size = New System.Drawing.Size(96, 17)
         Me.Label72.TabIndex = 69
-        Me.Label72.Text = "FaxNumber"
+        Me.Label72.Text = "Fax_Number :"
         '
         'Label73
         '
         Me.Label73.AutoSize = True
         Me.Label73.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label73.Location = New System.Drawing.Point(939, 140)
-        Me.Label73.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label73.Location = New System.Drawing.Point(70, 275)
         Me.Label73.Name = "Label73"
-        Me.Label73.Size = New System.Drawing.Size(372, 25)
+        Me.Label73.Size = New System.Drawing.Size(220, 17)
         Me.Label73.TabIndex = 66
-        Me.Label73.Text = "Requesting use of medical equipment"
+        Me.Label73.Text = "SurgicalAndNonSurgicalSuppliers"
         '
         'Label74
         '
         Me.Label74.AutoSize = True
         Me.Label74.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label74.Location = New System.Drawing.Point(440, 145)
-        Me.Label74.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label74.Location = New System.Drawing.Point(70, 84)
         Me.Label74.Name = "Label74"
-        Me.Label74.Size = New System.Drawing.Size(209, 25)
+        Me.Label74.Size = New System.Drawing.Size(60, 17)
         Me.Label74.TabIndex = 65
-        Me.Label74.Text = "Personal information"
+        Me.Label74.Text = "Supplier"
         '
         'Label75
         '
         Me.Label75.AutoSize = True
         Me.Label75.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label75.Location = New System.Drawing.Point(747, 29)
-        Me.Label75.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label75.Location = New System.Drawing.Point(31, 13)
         Me.Label75.Name = "Label75"
-        Me.Label75.Size = New System.Drawing.Size(173, 47)
+        Me.Label75.Size = New System.Drawing.Size(113, 31)
         Me.Label75.TabIndex = 64
         Me.Label75.Text = "Supplier"
         '
@@ -1386,10 +1393,10 @@ Partial Class MainPanel
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button7.Location = New System.Drawing.Point(1087, 463)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button7.Location = New System.Drawing.Point(779, 301)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(170, 55)
+        Me.Button7.Size = New System.Drawing.Size(113, 36)
         Me.Button7.TabIndex = 63
         Me.Button7.Text = "Next"
         Me.Button7.UseVisualStyleBackColor = False
@@ -1403,10 +1410,10 @@ Partial Class MainPanel
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(908, 463)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button8.Location = New System.Drawing.Point(659, 301)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(147, 55)
+        Me.Button8.Size = New System.Drawing.Size(98, 36)
         Me.Button8.TabIndex = 62
         Me.Button8.Text = "Add"
         Me.Button8.UseVisualStyleBackColor = False
@@ -1415,10 +1422,9 @@ Partial Class MainPanel
         '
         Me.Label76.AutoSize = True
         Me.Label76.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label76.Location = New System.Drawing.Point(937, 260)
-        Me.Label76.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label76.Location = New System.Drawing.Point(625, 169)
         Me.Label76.Name = "Label76"
-        Me.Label76.Size = New System.Drawing.Size(130, 25)
+        Me.Label76.Size = New System.Drawing.Size(86, 17)
         Me.Label76.TabIndex = 61
         Me.Label76.Text = "Track status"
         '
@@ -1426,10 +1432,9 @@ Partial Class MainPanel
         '
         Me.Label77.AutoSize = True
         Me.Label77.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label77.Location = New System.Drawing.Point(1131, 260)
-        Me.Label77.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label77.Location = New System.Drawing.Point(754, 169)
         Me.Label77.Name = "Label77"
-        Me.Label77.Size = New System.Drawing.Size(79, 25)
+        Me.Label77.Size = New System.Drawing.Size(52, 17)
         Me.Label77.TabIndex = 60
         Me.Label77.Text = "Priority"
         '
@@ -1437,21 +1442,19 @@ Partial Class MainPanel
         '
         Me.Label78.AutoSize = True
         Me.Label78.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label78.Location = New System.Drawing.Point(939, 333)
-        Me.Label78.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label78.Location = New System.Drawing.Point(97, 323)
         Me.Label78.Name = "Label78"
-        Me.Label78.Size = New System.Drawing.Size(92, 25)
+        Me.Label78.Size = New System.Drawing.Size(69, 17)
         Me.Label78.TabIndex = 59
-        Me.Label78.Text = "Quantity"
+        Me.Label78.Text = "Quantity :"
         '
         'Label79
         '
         Me.Label79.AutoSize = True
         Me.Label79.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label79.Location = New System.Drawing.Point(1131, 188)
-        Me.Label79.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label79.Location = New System.Drawing.Point(754, 122)
         Me.Label79.Name = "Label79"
-        Me.Label79.Size = New System.Drawing.Size(174, 25)
+        Me.Label79.Size = New System.Drawing.Size(115, 17)
         Me.Label79.TabIndex = 58
         Me.Label79.Text = "Devices required"
         '
@@ -1459,10 +1462,9 @@ Partial Class MainPanel
         '
         Me.Label80.AutoSize = True
         Me.Label80.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label80.Location = New System.Drawing.Point(937, 188)
-        Me.Label80.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label80.Location = New System.Drawing.Point(625, 122)
         Me.Label80.Name = "Label80"
-        Me.Label80.Size = New System.Drawing.Size(63, 25)
+        Me.Label80.Size = New System.Drawing.Size(42, 17)
         Me.Label80.TabIndex = 57
         Me.Label80.Text = "Ward"
         '
@@ -1470,21 +1472,19 @@ Partial Class MainPanel
         '
         Me.Label81.AutoSize = True
         Me.Label81.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label81.Location = New System.Drawing.Point(632, 342)
-        Me.Label81.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label81.Location = New System.Drawing.Point(289, 179)
         Me.Label81.Name = "Label81"
-        Me.Label81.Size = New System.Drawing.Size(74, 25)
+        Me.Label81.Size = New System.Drawing.Size(142, 17)
         Me.Label81.TabIndex = 56
-        Me.Label81.Text = "Phone"
+        Me.Label81.Text = "Telephone_Number :"
         '
         'Label82
         '
         Me.Label82.AutoSize = True
         Me.Label82.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label82.Location = New System.Drawing.Point(438, 341)
-        Me.Label82.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label82.Location = New System.Drawing.Point(440, 275)
         Me.Label82.Name = "Label82"
-        Me.Label82.Size = New System.Drawing.Size(65, 25)
+        Me.Label82.Size = New System.Drawing.Size(42, 17)
         Me.Label82.TabIndex = 55
         Me.Label82.Text = "Email"
         '
@@ -1492,10 +1492,9 @@ Partial Class MainPanel
         '
         Me.Label83.AutoSize = True
         Me.Label83.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label83.Location = New System.Drawing.Point(1131, 325)
-        Me.Label83.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label83.Location = New System.Drawing.Point(754, 211)
         Me.Label83.Name = "Label83"
-        Me.Label83.Size = New System.Drawing.Size(198, 25)
+        Me.Label83.Size = New System.Drawing.Size(131, 17)
         Me.Label83.TabIndex = 54
         Me.Label83.Text = "Equipment provider"
         '
@@ -1503,30 +1502,27 @@ Partial Class MainPanel
         '
         Me.Label84.AutoSize = True
         Me.Label84.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label84.Location = New System.Drawing.Point(632, 193)
-        Me.Label84.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label84.Location = New System.Drawing.Point(53, 212)
         Me.Label84.Name = "Label84"
-        Me.Label84.Size = New System.Drawing.Size(106, 25)
+        Me.Label84.Size = New System.Drawing.Size(113, 17)
         Me.Label84.TabIndex = 53
-        Me.Label84.Text = "Lastname"
+        Me.Label84.Text = "Supplier_Name :"
         '
         'Label85
         '
         Me.Label85.AutoSize = True
         Me.Label85.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label85.Location = New System.Drawing.Point(440, 193)
-        Me.Label85.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label85.Location = New System.Drawing.Point(98, 174)
         Me.Label85.Name = "Label85"
-        Me.Label85.Size = New System.Drawing.Size(68, 25)
+        Me.Label85.Size = New System.Drawing.Size(68, 17)
         Me.Label85.TabIndex = 52
-        Me.Label85.Text = "Name"
+        Me.Label85.Text = "Address :"
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(985, 105)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button11.Location = New System.Drawing.Point(657, 68)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(112, 35)
+        Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 26
         Me.Button11.Text = "Search.."
         Me.Button11.UseVisualStyleBackColor = True
@@ -1535,24 +1531,22 @@ Partial Class MainPanel
         '
         Me.TableLayoutPanel6.ColumnCount = 1
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.PictureBox51, 0, 0)
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(644, 105)
-        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(429, 68)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(51, 35)
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23.0!))
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(34, 23)
         Me.TableLayoutPanel6.TabIndex = 27
         '
         'PictureBox51
         '
         Me.PictureBox51.Image = Global.wellmeadows.My.Resources.Resources.Remove_bg_ai_1727027116255
-        Me.PictureBox51.Location = New System.Drawing.Point(4, 5)
-        Me.PictureBox51.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox51.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox51.Name = "PictureBox51"
-        Me.PictureBox51.Size = New System.Drawing.Size(42, 25)
+        Me.PictureBox51.Size = New System.Drawing.Size(28, 16)
         Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox51.TabIndex = 0
         Me.PictureBox51.TabStop = False
@@ -1561,10 +1555,9 @@ Partial Class MainPanel
         '
         Me.Label86.AutoSize = True
         Me.Label86.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label86.Location = New System.Drawing.Point(734, 30)
-        Me.Label86.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label86.Location = New System.Drawing.Point(489, 20)
         Me.Label86.Name = "Label86"
-        Me.Label86.Size = New System.Drawing.Size(224, 33)
+        Me.Label86.Size = New System.Drawing.Size(147, 24)
         Me.Label86.TabIndex = 28
         Me.Label86.Text = "APPOINTMENT"
         '
@@ -1577,9 +1570,10 @@ Partial Class MainPanel
         Me.panel_Appointment.Controls.Add(Me.Button11)
         Me.panel_Appointment.Controls.Add(Me.RoundCornerTextbox41)
         Me.panel_Appointment.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Appointment.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Appointment.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Appointment.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Appointment.Name = "panel_Appointment"
-        Me.panel_Appointment.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Appointment.Size = New System.Drawing.Size(902, 549)
         Me.panel_Appointment.TabIndex = 0
         '
         'Button9
@@ -1591,10 +1585,10 @@ Partial Class MainPanel
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button9.Location = New System.Drawing.Point(808, 347)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button9.Location = New System.Drawing.Point(593, 226)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(170, 55)
+        Me.Button9.Size = New System.Drawing.Size(113, 36)
         Me.Button9.TabIndex = 30
         Me.Button9.Text = "DELETE"
         Me.Button9.UseVisualStyleBackColor = False
@@ -1608,10 +1602,10 @@ Partial Class MainPanel
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button10.Location = New System.Drawing.Point(606, 347)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
+        Me.Button10.Location = New System.Drawing.Point(458, 226)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(170, 55)
+        Me.Button10.Size = New System.Drawing.Size(113, 36)
         Me.Button10.TabIndex = 29
         Me.Button10.Text = "ADD"
         Me.Button10.UseVisualStyleBackColor = False
@@ -1623,9 +1617,10 @@ Partial Class MainPanel
         Me.panel_Profile.Controls.Add(Me.pnl_profile_1)
         Me.panel_Profile.Controls.Add(Me.Label4)
         Me.panel_Profile.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Profile.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Profile.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Profile.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Profile.Name = "panel_Profile"
-        Me.panel_Profile.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Profile.Size = New System.Drawing.Size(902, 549)
         Me.panel_Profile.TabIndex = 5
         '
         'TableLayoutPanel7
@@ -1634,27 +1629,28 @@ Partial Class MainPanel
         Me.TableLayoutPanel7.ColumnCount = 4
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.62567!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.37433!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label3, 0, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 1
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(1191, 102)
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66.0!))
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(902, 66)
         Me.TableLayoutPanel7.TabIndex = 8
         '
         'Label3
         '
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Inter", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(20, 22)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(13, 17)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(13, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(153, 57)
+        Me.Label3.Size = New System.Drawing.Size(98, 31)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Profile"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1666,37 +1662,40 @@ Partial Class MainPanel
         Me.pnl_profile_1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.pnl_profile_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_profile_1.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_profile_1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_profile_1.Name = "pnl_profile_1"
         Me.pnl_profile_1.RowCount = 2
         Me.pnl_profile_1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.pnl_profile_1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.pnl_profile_1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.pnl_profile_1.Size = New System.Drawing.Size(1191, 844)
+        Me.pnl_profile_1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.pnl_profile_1.Size = New System.Drawing.Size(902, 549)
         Me.pnl_profile_1.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(270, 43)
+        Me.Label4.Location = New System.Drawing.Point(180, 28)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(57, 20)
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Label4"
         '
         'Main
         '
-        Me.Main.Controls.Add(Me.panel_Staff)
-        Me.Main.Controls.Add(Me.panel_Patient)
-        Me.Main.Controls.Add(Me.panel_Dashboard)
-        Me.Main.Controls.Add(Me.panel_Profile)
         Me.Main.Controls.Add(Me.panel_Supplier)
+        Me.Main.Controls.Add(Me.panel_Dashboard)
+        Me.Main.Controls.Add(Me.panel_Patient)
+        Me.Main.Controls.Add(Me.panel_Staff)
+        Me.Main.Controls.Add(Me.panel_Profile)
         Me.Main.Controls.Add(Me.panel_Appointment)
         Me.Main.Controls.Add(Me.panel_Ward)
         Me.Main.Controls.Add(Me.pnlsidebar)
         Me.Main.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Main.Location = New System.Drawing.Point(0, 0)
+        Me.Main.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Main.Name = "Main"
-        Me.Main.Size = New System.Drawing.Size(1428, 844)
+        Me.Main.Size = New System.Drawing.Size(1060, 549)
         Me.Main.TabIndex = 0
         '
         'panel_Staff
@@ -1705,10 +1704,141 @@ Partial Class MainPanel
         Me.panel_Staff.Controls.Add(Me.pnl_Staff_Edit_1)
         Me.panel_Staff.Controls.Add(Me.pnl_Staff_List)
         Me.panel_Staff.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Staff.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Staff.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Staff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Staff.Name = "panel_Staff"
-        Me.panel_Staff.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Staff.Size = New System.Drawing.Size(902, 549)
         Me.panel_Staff.TabIndex = 92
+        '
+        'pnl_Staff_Edit_2
+        '
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label55)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label6)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Button13)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox46)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox51)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox52)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox53)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label31)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label32)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label34)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label51)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Button14)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label52)
+        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label54)
+        Me.pnl_Staff_Edit_2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_Staff_Edit_2.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_Staff_Edit_2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnl_Staff_Edit_2.Name = "pnl_Staff_Edit_2"
+        Me.pnl_Staff_Edit_2.Size = New System.Drawing.Size(902, 549)
+        Me.pnl_Staff_Edit_2.TabIndex = 93
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label55.Location = New System.Drawing.Point(58, 174)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(125, 16)
+        Me.Label55.TabIndex = 90
+        Me.Label55.Text = "Work Experience"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(78, 92)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(18, 13)
+        Me.Label6.TabIndex = 89
+        Me.Label6.Text = "ID"
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button13.BackgroundImage = Global.wellmeadows.My.Resources.Resources.login_button1
+        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button13.Location = New System.Drawing.Point(369, 478)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(113, 36)
+        Me.Button13.TabIndex = 86
+        Me.Button13.Text = "ADD"
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(433, 89)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(26, 13)
+        Me.Label31.TabIndex = 75
+        Me.Label31.Text = "NIN"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(624, 92)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(33, 13)
+        Me.Label32.TabIndex = 74
+        Me.Label32.Text = "Ward"
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(830, 359)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(125, 13)
+        Me.Label34.TabIndex = 73
+        Me.Label34.Text = "Permanent_or_temporary"
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label51.Location = New System.Drawing.Point(51, 62)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(93, 16)
+        Me.Label51.TabIndex = 88
+        Me.Label51.Text = "Qualification"
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button14.BackgroundImage = Global.wellmeadows.My.Resources.Resources.login_button1
+        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button14.Location = New System.Drawing.Point(222, 486)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(2, 5, 2, 6)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(113, 36)
+        Me.Button14.TabIndex = 87
+        Me.Button14.Text = "NEXT"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(225, 10)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(311, 32)
+        Me.Label52.TabIndex = 85
+        Me.Label52.Text = "STAFF MANAGEMENT"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Location = New System.Drawing.Point(263, 146)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(45, 13)
+        Me.Label54.TabIndex = 80
+        Me.Label54.Text = "Address"
         '
         'pnl_Staff_List
         '
@@ -1716,8 +1846,9 @@ Partial Class MainPanel
         Me.pnl_Staff_List.Controls.Add(Me.TableLayoutPanel5)
         Me.pnl_Staff_List.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnl_Staff_List.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_Staff_List.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnl_Staff_List.Name = "pnl_Staff_List"
-        Me.pnl_Staff_List.Size = New System.Drawing.Size(1191, 844)
+        Me.pnl_Staff_List.Size = New System.Drawing.Size(902, 549)
         Me.pnl_Staff_List.TabIndex = 92
         '
         'TableLayoutPanel3
@@ -1728,25 +1859,26 @@ Partial Class MainPanel
         Me.TableLayoutPanel3.Controls.Add(Me.staff_list_grid, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.Panel1, 0, 2)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 110)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 72)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 3
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 230.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1191, 734)
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(902, 477)
         Me.TableLayoutPanel3.TabIndex = 7
         '
         'Label33
         '
         Me.Label33.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label33.Font = New System.Drawing.Font("Inter", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.Location = New System.Drawing.Point(30, 0)
-        Me.Label33.Margin = New System.Windows.Forms.Padding(30, 0, 3, 0)
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(20, 0)
+        Me.Label33.Margin = New System.Windows.Forms.Padding(20, 0, 2, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(708, 59)
+        Me.Label33.Size = New System.Drawing.Size(472, 38)
         Me.Label33.TabIndex = 0
         Me.Label33.Text = "STAFF MANAGEMENT"
         '
@@ -1761,13 +1893,13 @@ Partial Class MainPanel
         Me.staff_list_grid.DataSource = Me.VwStaffFullDetailsBindingSource
         Me.staff_list_grid.Dock = System.Windows.Forms.DockStyle.Fill
         Me.staff_list_grid.GridColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.staff_list_grid.Location = New System.Drawing.Point(20, 79)
-        Me.staff_list_grid.Margin = New System.Windows.Forms.Padding(20)
+        Me.staff_list_grid.Location = New System.Drawing.Point(13, 51)
+        Me.staff_list_grid.Margin = New System.Windows.Forms.Padding(13, 13, 13, 13)
         Me.staff_list_grid.Name = "staff_list_grid"
         Me.staff_list_grid.RowHeadersVisible = False
         Me.staff_list_grid.RowHeadersWidth = 62
         Me.staff_list_grid.RowTemplate.Height = 28
-        Me.staff_list_grid.Size = New System.Drawing.Size(1151, 405)
+        Me.staff_list_grid.Size = New System.Drawing.Size(876, 263)
         Me.staff_list_grid.TabIndex = 6
         '
         'StaffIDDataGridViewTextBoxColumn
@@ -1974,9 +2106,10 @@ Partial Class MainPanel
         Me.Panel1.Controls.Add(Me.Button12)
         Me.Panel1.Controls.Add(Me.btn_staff_add)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(713, 507)
+        Me.Panel1.Location = New System.Drawing.Point(583, 329)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(475, 224)
+        Me.Panel1.Size = New System.Drawing.Size(317, 146)
         Me.Panel1.TabIndex = 7
         '
         'Button12
@@ -1988,10 +2121,10 @@ Partial Class MainPanel
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button12.Location = New System.Drawing.Point(277, 17)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(0, 5, 40, 0)
+        Me.Button12.Location = New System.Drawing.Point(185, 11)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(0, 3, 27, 0)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(165, 53)
+        Me.Button12.Size = New System.Drawing.Size(110, 34)
         Me.Button12.TabIndex = 12
         Me.Button12.Text = "Delete"
         Me.Button12.UseVisualStyleBackColor = False
@@ -2005,10 +2138,10 @@ Partial Class MainPanel
         Me.btn_staff_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_staff_add.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_staff_add.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.btn_staff_add.Location = New System.Drawing.Point(64, 15)
-        Me.btn_staff_add.Margin = New System.Windows.Forms.Padding(0, 5, 40, 0)
+        Me.btn_staff_add.Location = New System.Drawing.Point(43, 10)
+        Me.btn_staff_add.Margin = New System.Windows.Forms.Padding(0, 3, 27, 0)
         Me.btn_staff_add.Name = "btn_staff_add"
-        Me.btn_staff_add.Size = New System.Drawing.Size(181, 55)
+        Me.btn_staff_add.Size = New System.Drawing.Size(121, 36)
         Me.btn_staff_add.TabIndex = 11
         Me.btn_staff_add.Text = "Add"
         Me.btn_staff_add.UseVisualStyleBackColor = False
@@ -2019,8 +2152,8 @@ Partial Class MainPanel
         Me.TableLayoutPanel5.ColumnCount = 4
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.16578!))
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.83422!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.CircularPictureBox4, 3, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.stposition, 2, 1)
@@ -2028,57 +2161,60 @@ Partial Class MainPanel
         Me.TableLayoutPanel5.Controls.Add(Me.RoundCornerTextbox10, 1, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 2
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1191, 110)
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(902, 72)
         Me.TableLayoutPanel5.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Inter", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(20, 26)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(13, 20)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(13, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.TableLayoutPanel5.SetRowSpan(Me.Label1, 2)
-        Me.Label1.Size = New System.Drawing.Size(151, 57)
+        Me.Label1.Size = New System.Drawing.Size(106, 31)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "STAFF"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'stposition
         '
-        Me.stposition.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stposition.Location = New System.Drawing.Point(863, 57)
+        Me.stposition.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stposition.Location = New System.Drawing.Point(681, 38)
         Me.stposition.Margin = New System.Windows.Forms.Padding(0)
         Me.stposition.Name = "stposition"
-        Me.stposition.Size = New System.Drawing.Size(145, 53)
+        Me.stposition.Size = New System.Drawing.Size(97, 34)
         Me.stposition.TabIndex = 7
         Me.stposition.Text = "Position"
         Me.stposition.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'stfullname
         '
-        Me.stfullname.Font = New System.Drawing.Font("Inter", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stfullname.Location = New System.Drawing.Point(866, 0)
+        Me.stfullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stfullname.Location = New System.Drawing.Point(683, 0)
+        Me.stfullname.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.stfullname.Name = "stfullname"
-        Me.stfullname.Size = New System.Drawing.Size(139, 57)
+        Me.stfullname.Size = New System.Drawing.Size(93, 37)
         Me.stfullname.TabIndex = 6
         Me.stfullname.Text = "fullname"
         Me.stfullname.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
         'panel_Patient
         '
-        Me.panel_Patient.Controls.Add(Me.panel_Patient_list)
         Me.panel_Patient.Controls.Add(Me.panel_Patient_edit)
+        Me.panel_Patient.Controls.Add(Me.panel_Patient_list)
         Me.panel_Patient.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_Patient.Location = New System.Drawing.Point(237, 0)
+        Me.panel_Patient.Location = New System.Drawing.Point(158, 0)
+        Me.panel_Patient.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Patient.Name = "panel_Patient"
-        Me.panel_Patient.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Patient.Size = New System.Drawing.Size(902, 549)
         Me.panel_Patient.TabIndex = 65
         '
         'panel_Patient_list
@@ -2087,8 +2223,9 @@ Partial Class MainPanel
         Me.panel_Patient_list.Controls.Add(Me.TableLayoutPanel2)
         Me.panel_Patient_list.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel_Patient_list.Location = New System.Drawing.Point(0, 0)
+        Me.panel_Patient_list.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.panel_Patient_list.Name = "panel_Patient_list"
-        Me.panel_Patient_list.Size = New System.Drawing.Size(1191, 844)
+        Me.panel_Patient_list.Size = New System.Drawing.Size(902, 549)
         Me.panel_Patient_list.TabIndex = 7
         '
         'patient_list_grid
@@ -2098,11 +2235,12 @@ Partial Class MainPanel
         Me.patient_list_grid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Firstname, Me.Lastname, Me.SexDataGridViewTextBoxColumn1, Me.Telephone_Number, Me.DateofbirthDataGridViewTextBoxColumn1, Me.Date_Register_with_the_hospital, Me.AddressDataGridViewTextBoxColumn1, Me.Staff_ID})
         Me.patient_list_grid.DataSource = Me.PatientsBindingSource
         Me.patient_list_grid.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.patient_list_grid.Location = New System.Drawing.Point(0, 110)
+        Me.patient_list_grid.Location = New System.Drawing.Point(0, 72)
+        Me.patient_list_grid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.patient_list_grid.Name = "patient_list_grid"
         Me.patient_list_grid.RowHeadersWidth = 62
         Me.patient_list_grid.RowTemplate.Height = 28
-        Me.patient_list_grid.Size = New System.Drawing.Size(1191, 734)
+        Me.patient_list_grid.Size = New System.Drawing.Size(902, 477)
         Me.patient_list_grid.TabIndex = 7
         '
         'Column1
@@ -2188,8 +2326,8 @@ Partial Class MainPanel
         Me.TableLayoutPanel2.ColumnCount = 4
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.16578!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.83422!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.CircularPictureBox5, 3, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.ptposition, 2, 1)
@@ -2197,45 +2335,47 @@ Partial Class MainPanel
         Me.TableLayoutPanel2.Controls.Add(Me.RoundCornerTextbox42, 1, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1191, 110)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(902, 72)
         Me.TableLayoutPanel2.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Inter", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(20, 26)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(20, 0, 3, 0)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(13, 20)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(13, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.TableLayoutPanel2.SetRowSpan(Me.Label7, 2)
-        Me.Label7.Size = New System.Drawing.Size(163, 57)
+        Me.Label7.Size = New System.Drawing.Size(106, 31)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Patient"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'ptposition
         '
-        Me.ptposition.Font = New System.Drawing.Font("Inter", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ptposition.Location = New System.Drawing.Point(864, 57)
+        Me.ptposition.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ptposition.Location = New System.Drawing.Point(682, 38)
         Me.ptposition.Margin = New System.Windows.Forms.Padding(0)
         Me.ptposition.Name = "ptposition"
-        Me.ptposition.Size = New System.Drawing.Size(145, 53)
+        Me.ptposition.Size = New System.Drawing.Size(97, 34)
         Me.ptposition.TabIndex = 7
         Me.ptposition.Text = "Doctor"
         Me.ptposition.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'ptfullname
         '
-        Me.ptfullname.Font = New System.Drawing.Font("Inter", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ptfullname.Location = New System.Drawing.Point(867, 0)
+        Me.ptfullname.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ptfullname.Location = New System.Drawing.Point(684, 0)
+        Me.ptfullname.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.ptfullname.Name = "ptfullname"
-        Me.ptfullname.Size = New System.Drawing.Size(139, 57)
+        Me.ptfullname.Size = New System.Drawing.Size(93, 37)
         Me.ptfullname.TabIndex = 6
         Me.ptfullname.Text = "John Doe"
         Me.ptfullname.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -2257,149 +2397,175 @@ Partial Class MainPanel
         '
         Me.VwStaffFullDetailsTableAdapter.ClearBeforeFill = True
         '
-        'Label5
+        'RoundCornerTextbox46
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(394, 136)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(26, 20)
-        Me.Label5.TabIndex = 89
-        Me.Label5.Text = "ID"
+        Me.RoundCornerTextbox46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox46.Location = New System.Drawing.Point(465, 84)
+        Me.RoundCornerTextbox46.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
+        Me.RoundCornerTextbox46.Name = "RoundCornerTextbox46"
+        Me.RoundCornerTextbox46.Size = New System.Drawing.Size(127, 23)
+        Me.RoundCornerTextbox46.TabIndex = 64
+        '
+        'RoundCornerTextbox51
+        '
+        Me.RoundCornerTextbox51.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox51.Location = New System.Drawing.Point(624, 116)
+        Me.RoundCornerTextbox51.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
+        Me.RoundCornerTextbox51.Name = "RoundCornerTextbox51"
+        Me.RoundCornerTextbox51.Size = New System.Drawing.Size(121, 23)
+        Me.RoundCornerTextbox51.TabIndex = 58
+        '
+        'RoundCornerTextbox52
+        '
+        Me.RoundCornerTextbox52.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox52.Location = New System.Drawing.Point(313, 142)
+        Me.RoundCornerTextbox52.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
+        Me.RoundCornerTextbox52.Name = "RoundCornerTextbox52"
+        Me.RoundCornerTextbox52.Size = New System.Drawing.Size(145, 23)
+        Me.RoundCornerTextbox52.TabIndex = 57
+        '
+        'RoundCornerTextbox53
+        '
+        Me.RoundCornerTextbox53.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox53.Location = New System.Drawing.Point(414, 437)
+        Me.RoundCornerTextbox53.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
+        Me.RoundCornerTextbox53.Name = "RoundCornerTextbox53"
+        Me.RoundCornerTextbox53.Size = New System.Drawing.Size(128, 23)
+        Me.RoundCornerTextbox53.TabIndex = 56
         '
         'RoundCornerTextbox13
         '
         Me.RoundCornerTextbox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox13.Location = New System.Drawing.Point(346, 666)
-        Me.RoundCornerTextbox13.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox13.Location = New System.Drawing.Point(231, 433)
+        Me.RoundCornerTextbox13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox13.Name = "RoundCornerTextbox13"
-        Me.RoundCornerTextbox13.Size = New System.Drawing.Size(200, 30)
+        Me.RoundCornerTextbox13.Size = New System.Drawing.Size(135, 23)
         Me.RoundCornerTextbox13.TabIndex = 67
         '
         'RoundCornerTextbox14
         '
         Me.RoundCornerTextbox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox14.Location = New System.Drawing.Point(180, 589)
-        Me.RoundCornerTextbox14.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox14.Location = New System.Drawing.Point(120, 383)
+        Me.RoundCornerTextbox14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox14.Name = "RoundCornerTextbox14"
-        Me.RoundCornerTextbox14.Size = New System.Drawing.Size(211, 30)
+        Me.RoundCornerTextbox14.Size = New System.Drawing.Size(142, 23)
         Me.RoundCornerTextbox14.TabIndex = 66
         '
         'RoundCornerTextbox15
         '
         Me.RoundCornerTextbox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox15.Location = New System.Drawing.Point(806, 687)
-        Me.RoundCornerTextbox15.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox15.Location = New System.Drawing.Point(537, 447)
+        Me.RoundCornerTextbox15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox15.Name = "RoundCornerTextbox15"
-        Me.RoundCornerTextbox15.Size = New System.Drawing.Size(164, 30)
+        Me.RoundCornerTextbox15.Size = New System.Drawing.Size(111, 23)
         Me.RoundCornerTextbox15.TabIndex = 65
         '
         'RoundCornerTextbox16
         '
         Me.RoundCornerTextbox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox16.Location = New System.Drawing.Point(697, 129)
-        Me.RoundCornerTextbox16.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox16.Location = New System.Drawing.Point(465, 84)
+        Me.RoundCornerTextbox16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox16.Name = "RoundCornerTextbox16"
-        Me.RoundCornerTextbox16.Size = New System.Drawing.Size(188, 30)
+        Me.RoundCornerTextbox16.Size = New System.Drawing.Size(127, 23)
         Me.RoundCornerTextbox16.TabIndex = 64
         '
         'RoundCornerTextbox9
         '
         Me.RoundCornerTextbox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox9.Location = New System.Drawing.Point(80, 666)
-        Me.RoundCornerTextbox9.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox9.Location = New System.Drawing.Point(53, 433)
+        Me.RoundCornerTextbox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox9.Name = "RoundCornerTextbox9"
-        Me.RoundCornerTextbox9.Size = New System.Drawing.Size(210, 30)
+        Me.RoundCornerTextbox9.Size = New System.Drawing.Size(141, 23)
         Me.RoundCornerTextbox9.TabIndex = 63
         '
         'RoundCornerTextbox11
         '
         Me.RoundCornerTextbox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox11.Location = New System.Drawing.Point(1034, 687)
-        Me.RoundCornerTextbox11.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox11.Location = New System.Drawing.Point(689, 447)
+        Me.RoundCornerTextbox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox11.Name = "RoundCornerTextbox11"
-        Me.RoundCornerTextbox11.Size = New System.Drawing.Size(182, 30)
+        Me.RoundCornerTextbox11.Size = New System.Drawing.Size(123, 23)
         Me.RoundCornerTextbox11.TabIndex = 61
         '
         'RoundCornerTextbox12
         '
         Me.RoundCornerTextbox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox12.Location = New System.Drawing.Point(180, 487)
-        Me.RoundCornerTextbox12.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox12.Location = New System.Drawing.Point(120, 317)
+        Me.RoundCornerTextbox12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox12.Name = "RoundCornerTextbox12"
-        Me.RoundCornerTextbox12.Size = New System.Drawing.Size(211, 30)
+        Me.RoundCornerTextbox12.Size = New System.Drawing.Size(142, 23)
         Me.RoundCornerTextbox12.TabIndex = 60
         '
         'RoundCornerTextbox5
         '
         Me.RoundCornerTextbox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox5.Location = New System.Drawing.Point(592, 360)
-        Me.RoundCornerTextbox5.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox5.Location = New System.Drawing.Point(395, 234)
+        Me.RoundCornerTextbox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox5.Name = "RoundCornerTextbox5"
-        Me.RoundCornerTextbox5.Size = New System.Drawing.Size(211, 30)
+        Me.RoundCornerTextbox5.Size = New System.Drawing.Size(142, 23)
         Me.RoundCornerTextbox5.TabIndex = 59
         '
         'RoundCornerTextbox6
         '
         Me.RoundCornerTextbox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox6.Location = New System.Drawing.Point(936, 178)
-        Me.RoundCornerTextbox6.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox6.Location = New System.Drawing.Point(624, 116)
+        Me.RoundCornerTextbox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox6.Name = "RoundCornerTextbox6"
-        Me.RoundCornerTextbox6.Size = New System.Drawing.Size(180, 30)
+        Me.RoundCornerTextbox6.Size = New System.Drawing.Size(121, 23)
         Me.RoundCornerTextbox6.TabIndex = 58
         '
         'RoundCornerTextbox7
         '
         Me.RoundCornerTextbox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox7.Location = New System.Drawing.Point(469, 218)
-        Me.RoundCornerTextbox7.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox7.Location = New System.Drawing.Point(313, 142)
+        Me.RoundCornerTextbox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox7.Name = "RoundCornerTextbox7"
-        Me.RoundCornerTextbox7.Size = New System.Drawing.Size(216, 30)
+        Me.RoundCornerTextbox7.Size = New System.Drawing.Size(145, 23)
         Me.RoundCornerTextbox7.TabIndex = 57
         '
         'RoundCornerTextbox8
         '
         Me.RoundCornerTextbox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox8.Location = New System.Drawing.Point(430, 130)
-        Me.RoundCornerTextbox8.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox8.Location = New System.Drawing.Point(287, 84)
+        Me.RoundCornerTextbox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox8.Name = "RoundCornerTextbox8"
-        Me.RoundCornerTextbox8.Size = New System.Drawing.Size(190, 30)
+        Me.RoundCornerTextbox8.Size = New System.Drawing.Size(128, 23)
         Me.RoundCornerTextbox8.TabIndex = 56
         '
         'RoundCornerTextbox4
         '
         Me.RoundCornerTextbox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox4.Location = New System.Drawing.Point(1034, 581)
-        Me.RoundCornerTextbox4.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox4.Location = New System.Drawing.Point(689, 378)
+        Me.RoundCornerTextbox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox4.Name = "RoundCornerTextbox4"
-        Me.RoundCornerTextbox4.Size = New System.Drawing.Size(184, 30)
+        Me.RoundCornerTextbox4.Size = New System.Drawing.Size(124, 23)
         Me.RoundCornerTextbox4.TabIndex = 55
         '
         'RoundCornerTextbox3
         '
         Me.RoundCornerTextbox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox3.Location = New System.Drawing.Point(587, 303)
-        Me.RoundCornerTextbox3.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox3.Location = New System.Drawing.Point(391, 197)
+        Me.RoundCornerTextbox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox3.Name = "RoundCornerTextbox3"
-        Me.RoundCornerTextbox3.Size = New System.Drawing.Size(216, 30)
+        Me.RoundCornerTextbox3.Size = New System.Drawing.Size(145, 23)
         Me.RoundCornerTextbox3.TabIndex = 54
         '
         'RoundCornerTextbox2
         '
         Me.RoundCornerTextbox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox2.Location = New System.Drawing.Point(177, 298)
-        Me.RoundCornerTextbox2.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox2.Location = New System.Drawing.Point(118, 194)
+        Me.RoundCornerTextbox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox2.Name = "RoundCornerTextbox2"
-        Me.RoundCornerTextbox2.Size = New System.Drawing.Size(211, 30)
+        Me.RoundCornerTextbox2.Size = New System.Drawing.Size(142, 23)
         Me.RoundCornerTextbox2.TabIndex = 53
         '
         'RoundCornerTextbox1
         '
         Me.RoundCornerTextbox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox1.Location = New System.Drawing.Point(806, 581)
-        Me.RoundCornerTextbox1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox1.Location = New System.Drawing.Point(537, 378)
+        Me.RoundCornerTextbox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox1.Name = "RoundCornerTextbox1"
-        Me.RoundCornerTextbox1.Size = New System.Drawing.Size(169, 30)
+        Me.RoundCornerTextbox1.Size = New System.Drawing.Size(114, 23)
         Me.RoundCornerTextbox1.TabIndex = 52
         '
         'CircularPictureBox4
@@ -2407,11 +2573,11 @@ Partial Class MainPanel
         Me.CircularPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CircularPictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CircularPictureBox4.Image = Global.wellmeadows.My.Resources.Resources._99999
-        Me.CircularPictureBox4.Location = New System.Drawing.Point(1068, 22)
+        Me.CircularPictureBox4.Location = New System.Drawing.Point(819, 15)
         Me.CircularPictureBox4.Margin = New System.Windows.Forms.Padding(0)
         Me.CircularPictureBox4.Name = "CircularPictureBox4"
         Me.TableLayoutPanel5.SetRowSpan(Me.CircularPictureBox4, 2)
-        Me.CircularPictureBox4.Size = New System.Drawing.Size(63, 65)
+        Me.CircularPictureBox4.Size = New System.Drawing.Size(42, 42)
         Me.CircularPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.CircularPictureBox4.TabIndex = 5
         Me.CircularPictureBox4.TabStop = False
@@ -2419,11 +2585,12 @@ Partial Class MainPanel
         'RoundCornerTextbox10
         '
         Me.RoundCornerTextbox10.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.RoundCornerTextbox10.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox10.Location = New System.Drawing.Point(237, 36)
+        Me.RoundCornerTextbox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox10.Location = New System.Drawing.Point(187, 23)
+        Me.RoundCornerTextbox10.Margin = New System.Windows.Forms.Padding(2)
         Me.RoundCornerTextbox10.Name = "RoundCornerTextbox10"
         Me.TableLayoutPanel5.SetRowSpan(Me.RoundCornerTextbox10, 2)
-        Me.RoundCornerTextbox10.Size = New System.Drawing.Size(623, 37)
+        Me.RoundCornerTextbox10.Size = New System.Drawing.Size(414, 26)
         Me.RoundCornerTextbox10.TabIndex = 8
         '
         'CircularPictureBox5
@@ -2431,11 +2598,11 @@ Partial Class MainPanel
         Me.CircularPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CircularPictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CircularPictureBox5.Image = Global.wellmeadows.My.Resources.Resources._99999
-        Me.CircularPictureBox5.Location = New System.Drawing.Point(1068, 22)
+        Me.CircularPictureBox5.Location = New System.Drawing.Point(819, 15)
         Me.CircularPictureBox5.Margin = New System.Windows.Forms.Padding(0)
         Me.CircularPictureBox5.Name = "CircularPictureBox5"
         Me.TableLayoutPanel2.SetRowSpan(Me.CircularPictureBox5, 2)
-        Me.CircularPictureBox5.Size = New System.Drawing.Size(63, 65)
+        Me.CircularPictureBox5.Size = New System.Drawing.Size(42, 42)
         Me.CircularPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.CircularPictureBox5.TabIndex = 5
         Me.CircularPictureBox5.TabStop = False
@@ -2443,74 +2610,75 @@ Partial Class MainPanel
         'RoundCornerTextbox42
         '
         Me.RoundCornerTextbox42.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.RoundCornerTextbox42.Font = New System.Drawing.Font("Inter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox42.Location = New System.Drawing.Point(237, 36)
+        Me.RoundCornerTextbox42.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoundCornerTextbox42.Location = New System.Drawing.Point(187, 23)
+        Me.RoundCornerTextbox42.Margin = New System.Windows.Forms.Padding(2)
         Me.RoundCornerTextbox42.Name = "RoundCornerTextbox42"
         Me.TableLayoutPanel2.SetRowSpan(Me.RoundCornerTextbox42, 2)
-        Me.RoundCornerTextbox42.Size = New System.Drawing.Size(624, 37)
+        Me.RoundCornerTextbox42.Size = New System.Drawing.Size(415, 26)
         Me.RoundCornerTextbox42.TabIndex = 8
         '
         'RoundCornerTextbox17
         '
         Me.RoundCornerTextbox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox17.Location = New System.Drawing.Point(936, 177)
-        Me.RoundCornerTextbox17.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox17.Location = New System.Drawing.Point(624, 115)
+        Me.RoundCornerTextbox17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox17.Name = "RoundCornerTextbox17"
-        Me.RoundCornerTextbox17.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox17.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox17.TabIndex = 60
         '
         'RoundCornerTextbox18
         '
         Me.RoundCornerTextbox18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox18.Location = New System.Drawing.Point(937, 530)
-        Me.RoundCornerTextbox18.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox18.Location = New System.Drawing.Point(625, 344)
+        Me.RoundCornerTextbox18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox18.Name = "RoundCornerTextbox18"
-        Me.RoundCornerTextbox18.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox18.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox18.TabIndex = 59
         '
         'RoundCornerTextbox19
         '
         Me.RoundCornerTextbox19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox19.Location = New System.Drawing.Point(937, 295)
-        Me.RoundCornerTextbox19.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox19.Location = New System.Drawing.Point(625, 192)
+        Me.RoundCornerTextbox19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox19.Name = "RoundCornerTextbox19"
-        Me.RoundCornerTextbox19.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox19.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox19.TabIndex = 58
         '
         'RoundCornerTextbox20
         '
         Me.RoundCornerTextbox20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox20.Location = New System.Drawing.Point(456, 657)
-        Me.RoundCornerTextbox20.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox20.Location = New System.Drawing.Point(304, 427)
+        Me.RoundCornerTextbox20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox20.Name = "RoundCornerTextbox20"
-        Me.RoundCornerTextbox20.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox20.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox20.TabIndex = 57
         '
         'RoundCornerTextbox21
         '
         Me.RoundCornerTextbox21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox21.Location = New System.Drawing.Point(455, 296)
-        Me.RoundCornerTextbox21.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox21.Location = New System.Drawing.Point(303, 192)
+        Me.RoundCornerTextbox21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox21.Name = "RoundCornerTextbox21"
-        Me.RoundCornerTextbox21.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox21.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox21.TabIndex = 55
         '
         'RoundCornerTextbox22
         '
         Me.RoundCornerTextbox22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox22.Location = New System.Drawing.Point(455, 545)
-        Me.RoundCornerTextbox22.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox22.Location = New System.Drawing.Point(303, 354)
+        Me.RoundCornerTextbox22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox22.Name = "RoundCornerTextbox22"
-        Me.RoundCornerTextbox22.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox22.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox22.TabIndex = 56
         '
         'RoundCornerTextbox23
         '
         Me.RoundCornerTextbox23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox23.Location = New System.Drawing.Point(455, 178)
-        Me.RoundCornerTextbox23.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox23.Location = New System.Drawing.Point(303, 116)
+        Me.RoundCornerTextbox23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox23.Name = "RoundCornerTextbox23"
-        Me.RoundCornerTextbox23.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox23.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox23.TabIndex = 54
         '
         'CircularPictureBox1
@@ -2518,11 +2686,11 @@ Partial Class MainPanel
         Me.CircularPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CircularPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CircularPictureBox1.Image = Global.wellmeadows.My.Resources.Resources._99999
-        Me.CircularPictureBox1.Location = New System.Drawing.Point(1068, 22)
+        Me.CircularPictureBox1.Location = New System.Drawing.Point(819, 15)
         Me.CircularPictureBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.CircularPictureBox1.Name = "CircularPictureBox1"
         Me.TableLayoutPanel4.SetRowSpan(Me.CircularPictureBox1, 2)
-        Me.CircularPictureBox1.Size = New System.Drawing.Size(63, 65)
+        Me.CircularPictureBox1.Size = New System.Drawing.Size(42, 42)
         Me.CircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.CircularPictureBox1.TabIndex = 5
         Me.CircularPictureBox1.TabStop = False
@@ -2531,356 +2699,184 @@ Partial Class MainPanel
         '
         Me.RoundCornerTextbox29.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox29.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox29.Location = New System.Drawing.Point(442, 304)
-        Me.RoundCornerTextbox29.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox29.Location = New System.Drawing.Point(169, 172)
+        Me.RoundCornerTextbox29.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox29.Name = "RoundCornerTextbox29"
-        Me.RoundCornerTextbox29.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox29.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox29.TabIndex = 68
         '
         'RoundCornerTextbox30
         '
         Me.RoundCornerTextbox30.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox30.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox30.Location = New System.Drawing.Point(637, 304)
-        Me.RoundCornerTextbox30.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox30.Location = New System.Drawing.Point(436, 176)
+        Me.RoundCornerTextbox30.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox30.Name = "RoundCornerTextbox30"
-        Me.RoundCornerTextbox30.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox30.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox30.TabIndex = 67
         '
         'RoundCornerTextbox31
         '
         Me.RoundCornerTextbox31.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox31.Location = New System.Drawing.Point(941, 359)
-        Me.RoundCornerTextbox31.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox31.Location = New System.Drawing.Point(627, 233)
+        Me.RoundCornerTextbox31.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox31.Name = "RoundCornerTextbox31"
-        Me.RoundCornerTextbox31.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox31.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox31.TabIndex = 51
         '
         'RoundCornerTextbox32
         '
         Me.RoundCornerTextbox32.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox32.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox32.Location = New System.Drawing.Point(1136, 287)
-        Me.RoundCornerTextbox32.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox32.Location = New System.Drawing.Point(757, 187)
+        Me.RoundCornerTextbox32.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox32.Name = "RoundCornerTextbox32"
-        Me.RoundCornerTextbox32.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox32.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox32.TabIndex = 50
         '
         'RoundCornerTextbox33
         '
         Me.RoundCornerTextbox33.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox33.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox33.Location = New System.Drawing.Point(941, 295)
-        Me.RoundCornerTextbox33.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox33.Location = New System.Drawing.Point(627, 192)
+        Me.RoundCornerTextbox33.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox33.Name = "RoundCornerTextbox33"
-        Me.RoundCornerTextbox33.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox33.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox33.TabIndex = 49
         '
         'RoundCornerTextbox34
         '
         Me.RoundCornerTextbox34.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox34.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox34.Location = New System.Drawing.Point(1136, 222)
-        Me.RoundCornerTextbox34.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox34.Location = New System.Drawing.Point(757, 144)
+        Me.RoundCornerTextbox34.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox34.Name = "RoundCornerTextbox34"
-        Me.RoundCornerTextbox34.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox34.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox34.TabIndex = 48
         '
         'RoundCornerTextbox35
         '
         Me.RoundCornerTextbox35.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox35.Location = New System.Drawing.Point(941, 222)
-        Me.RoundCornerTextbox35.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox35.Location = New System.Drawing.Point(627, 144)
+        Me.RoundCornerTextbox35.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox35.Name = "RoundCornerTextbox35"
-        Me.RoundCornerTextbox35.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox35.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox35.TabIndex = 47
         '
         'RoundCornerTextbox36
         '
         Me.RoundCornerTextbox36.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox36.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox36.Location = New System.Drawing.Point(637, 376)
-        Me.RoundCornerTextbox36.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox36.Location = New System.Drawing.Point(171, 323)
+        Me.RoundCornerTextbox36.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox36.Name = "RoundCornerTextbox36"
-        Me.RoundCornerTextbox36.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox36.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox36.TabIndex = 46
         '
         'RoundCornerTextbox37
         '
         Me.RoundCornerTextbox37.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox37.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox37.Location = New System.Drawing.Point(442, 375)
-        Me.RoundCornerTextbox37.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox37.Location = New System.Drawing.Point(171, 206)
+        Me.RoundCornerTextbox37.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox37.Name = "RoundCornerTextbox37"
-        Me.RoundCornerTextbox37.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox37.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox37.TabIndex = 45
         '
         'RoundCornerTextbox38
         '
         Me.RoundCornerTextbox38.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox38.Location = New System.Drawing.Point(1136, 359)
-        Me.RoundCornerTextbox38.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox38.Location = New System.Drawing.Point(757, 233)
+        Me.RoundCornerTextbox38.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox38.Name = "RoundCornerTextbox38"
-        Me.RoundCornerTextbox38.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox38.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox38.TabIndex = 44
         '
         'RoundCornerTextbox39
         '
         Me.RoundCornerTextbox39.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox39.Location = New System.Drawing.Point(637, 227)
-        Me.RoundCornerTextbox39.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox39.Location = New System.Drawing.Point(436, 137)
+        Me.RoundCornerTextbox39.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox39.Name = "RoundCornerTextbox39"
-        Me.RoundCornerTextbox39.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox39.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox39.TabIndex = 43
         '
         'RoundCornerTextbox40
         '
         Me.RoundCornerTextbox40.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.RoundCornerTextbox40.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox40.Location = New System.Drawing.Point(442, 230)
-        Me.RoundCornerTextbox40.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox40.Location = New System.Drawing.Point(171, 133)
+        Me.RoundCornerTextbox40.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox40.Name = "RoundCornerTextbox40"
-        Me.RoundCornerTextbox40.Size = New System.Drawing.Size(134, 30)
+        Me.RoundCornerTextbox40.Size = New System.Drawing.Size(91, 23)
         Me.RoundCornerTextbox40.TabIndex = 42
         '
         'RoundCornerTextbox41
         '
         Me.RoundCornerTextbox41.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox41.Location = New System.Drawing.Point(644, 105)
-        Me.RoundCornerTextbox41.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox41.Location = New System.Drawing.Point(429, 68)
+        Me.RoundCornerTextbox41.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox41.Name = "RoundCornerTextbox41"
-        Me.RoundCornerTextbox41.Size = New System.Drawing.Size(331, 30)
+        Me.RoundCornerTextbox41.Size = New System.Drawing.Size(222, 23)
         Me.RoundCornerTextbox41.TabIndex = 25
         '
         'RoundCornerTextbox24
         '
         Me.RoundCornerTextbox24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox24.Location = New System.Drawing.Point(537, 535)
-        Me.RoundCornerTextbox24.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox24.Location = New System.Drawing.Point(358, 348)
+        Me.RoundCornerTextbox24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox24.Name = "RoundCornerTextbox24"
-        Me.RoundCornerTextbox24.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox24.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox24.TabIndex = 66
         '
         'RoundCornerTextbox25
         '
         Me.RoundCornerTextbox25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox25.Location = New System.Drawing.Point(871, 233)
-        Me.RoundCornerTextbox25.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox25.Location = New System.Drawing.Point(581, 151)
+        Me.RoundCornerTextbox25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox25.Name = "RoundCornerTextbox25"
-        Me.RoundCornerTextbox25.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox25.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox25.TabIndex = 64
         '
         'RoundCornerTextbox26
         '
         Me.RoundCornerTextbox26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox26.Location = New System.Drawing.Point(553, 372)
-        Me.RoundCornerTextbox26.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox26.Location = New System.Drawing.Point(369, 242)
+        Me.RoundCornerTextbox26.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox26.Name = "RoundCornerTextbox26"
-        Me.RoundCornerTextbox26.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox26.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox26.TabIndex = 63
         '
         'RoundCornerTextbox27
         '
         Me.RoundCornerTextbox27.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox27.Location = New System.Drawing.Point(553, 233)
-        Me.RoundCornerTextbox27.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox27.Location = New System.Drawing.Point(369, 151)
+        Me.RoundCornerTextbox27.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox27.Name = "RoundCornerTextbox27"
-        Me.RoundCornerTextbox27.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox27.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox27.TabIndex = 62
         '
         'RoundCornerTextbox28
         '
         Me.RoundCornerTextbox28.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox28.Location = New System.Drawing.Point(918, 535)
-        Me.RoundCornerTextbox28.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
+        Me.RoundCornerTextbox28.Location = New System.Drawing.Point(612, 348)
+        Me.RoundCornerTextbox28.Margin = New System.Windows.Forms.Padding(2, 2, 2, 5)
         Me.RoundCornerTextbox28.Name = "RoundCornerTextbox28"
-        Me.RoundCornerTextbox28.Size = New System.Drawing.Size(294, 30)
+        Me.RoundCornerTextbox28.Size = New System.Drawing.Size(197, 23)
         Me.RoundCornerTextbox28.TabIndex = 65
-        '
-        'pnl_Staff_Edit_2
-        '
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label55)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label6)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Button13)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox46)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox51)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox52)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.RoundCornerTextbox53)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label31)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label32)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label34)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label51)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Button14)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label52)
-        Me.pnl_Staff_Edit_2.Controls.Add(Me.Label54)
-        Me.pnl_Staff_Edit_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_Staff_Edit_2.Location = New System.Drawing.Point(0, 0)
-        Me.pnl_Staff_Edit_2.Name = "pnl_Staff_Edit_2"
-        Me.pnl_Staff_Edit_2.Size = New System.Drawing.Size(1191, 844)
-        Me.pnl_Staff_Edit_2.TabIndex = 93
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(117, 142)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(26, 20)
-        Me.Label6.TabIndex = 89
-        Me.Label6.Text = "ID"
-        '
-        'Button13
-        '
-        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button13.BackgroundImage = Global.wellmeadows.My.Resources.Resources.login_button1
-        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button13.Location = New System.Drawing.Point(554, 736)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(170, 55)
-        Me.Button13.TabIndex = 86
-        Me.Button13.Text = "ADD"
-        Me.Button13.UseVisualStyleBackColor = False
-        '
-        'RoundCornerTextbox46
-        '
-        Me.RoundCornerTextbox46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox46.Location = New System.Drawing.Point(697, 129)
-        Me.RoundCornerTextbox46.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
-        Me.RoundCornerTextbox46.Name = "RoundCornerTextbox46"
-        Me.RoundCornerTextbox46.Size = New System.Drawing.Size(188, 30)
-        Me.RoundCornerTextbox46.TabIndex = 64
-        '
-        'RoundCornerTextbox51
-        '
-        Me.RoundCornerTextbox51.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox51.Location = New System.Drawing.Point(936, 178)
-        Me.RoundCornerTextbox51.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
-        Me.RoundCornerTextbox51.Name = "RoundCornerTextbox51"
-        Me.RoundCornerTextbox51.Size = New System.Drawing.Size(180, 30)
-        Me.RoundCornerTextbox51.TabIndex = 58
-        '
-        'RoundCornerTextbox52
-        '
-        Me.RoundCornerTextbox52.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox52.Location = New System.Drawing.Point(469, 218)
-        Me.RoundCornerTextbox52.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
-        Me.RoundCornerTextbox52.Name = "RoundCornerTextbox52"
-        Me.RoundCornerTextbox52.Size = New System.Drawing.Size(216, 30)
-        Me.RoundCornerTextbox52.TabIndex = 57
-        '
-        'RoundCornerTextbox53
-        '
-        Me.RoundCornerTextbox53.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoundCornerTextbox53.Location = New System.Drawing.Point(621, 672)
-        Me.RoundCornerTextbox53.Margin = New System.Windows.Forms.Padding(3, 3, 3, 8)
-        Me.RoundCornerTextbox53.Name = "RoundCornerTextbox53"
-        Me.RoundCornerTextbox53.Size = New System.Drawing.Size(190, 30)
-        Me.RoundCornerTextbox53.TabIndex = 56
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(650, 137)
-        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(36, 20)
-        Me.Label31.TabIndex = 75
-        Me.Label31.Text = "NIN"
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(936, 141)
-        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(47, 20)
-        Me.Label32.TabIndex = 74
-        Me.Label32.Text = "Ward"
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(1245, 553)
-        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(190, 20)
-        Me.Label34.TabIndex = 73
-        Me.Label34.Text = "Permanent_or_temporary"
-        '
-        'Label51
-        '
-        Me.Label51.AutoSize = True
-        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label51.Location = New System.Drawing.Point(76, 96)
-        Me.Label51.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(132, 25)
-        Me.Label51.TabIndex = 88
-        Me.Label51.Text = "Qualification"
-        '
-        'Button14
-        '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button14.BackgroundImage = Global.wellmeadows.My.Resources.Resources.login_button1
-        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.Button14.Location = New System.Drawing.Point(333, 748)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(3, 8, 3, 9)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(170, 55)
-        Me.Button14.TabIndex = 87
-        Me.Button14.Text = "NEXT"
-        Me.Button14.UseVisualStyleBackColor = False
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Inter", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(338, 15)
-        Me.Label52.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(473, 61)
-        Me.Label52.TabIndex = 85
-        Me.Label52.Text = "STAFF MANAGEMENT"
-        '
-        'Label54
-        '
-        Me.Label54.AutoSize = True
-        Me.Label54.Location = New System.Drawing.Point(394, 225)
-        Me.Label54.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(68, 20)
-        Me.Label54.TabIndex = 80
-        Me.Label54.Text = "Address"
-        '
-        'Label55
-        '
-        Me.Label55.AutoSize = True
-        Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label55.Location = New System.Drawing.Point(87, 267)
-        Me.Label55.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(177, 25)
-        Me.Label55.TabIndex = 90
-        Me.Label55.Text = "Work Experience"
         '
         'MainPanel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1428, 844)
+        Me.ClientSize = New System.Drawing.Size(1060, 549)
         Me.Controls.Add(Me.Main)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MainPanel"
         Me.Text = "Wellsmeadows Hospital"
         Me.panel_Dashboard.ResumeLayout(False)
@@ -2920,6 +2916,8 @@ Partial Class MainPanel
         Me.TableLayoutPanel7.PerformLayout()
         Me.Main.ResumeLayout(False)
         Me.panel_Staff.ResumeLayout(False)
+        Me.pnl_Staff_Edit_2.ResumeLayout(False)
+        Me.pnl_Staff_Edit_2.PerformLayout()
         Me.pnl_Staff_List.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.staff_list_grid, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2939,8 +2937,6 @@ Partial Class MainPanel
         CType(Me.CircularPictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CircularPictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CircularPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_Staff_Edit_2.ResumeLayout(False)
-        Me.pnl_Staff_Edit_2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

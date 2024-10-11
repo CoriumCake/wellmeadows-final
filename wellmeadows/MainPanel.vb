@@ -55,7 +55,7 @@ Public Class MainPanel
     ' Form Load event to initialize the default panel
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DbWellsmeadowsHospitalG19DataSet.vwStaffFullDetails' table. You can move, or remove it, as needed.
-        Me.VwStaffFullDetailsTableAdapter.Fill(Me.DbWellsmeadowsHospitalG19DataSet.vwStaffFullDetails)
+        ' Me.VwStaffFullDetailsTableAdapter.Fill(Me.DbWellsmeadowsHospitalG19DataSet.vwStaffFullDetails)
 
         ' Update labels for all panels
         UpdateUserLabelsInAllPanels(Me)
@@ -71,8 +71,8 @@ Public Class MainPanel
         End If
 
         ' Load data into tables
-        Me.PatientsTableAdapter.Fill(Me.DbWellsmeadowsHospitalG19DataSet.Patients)
-        Me.STAFFTableAdapter.Fill(Me.DbWellsmeadowsHospitalG19DataSet.STAFF)
+        ' Me.PatientsTableAdapter.Fill(Me.DbWellsmeadowsHospitalG19DataSet.Patients)
+        '  Me.STAFFTableAdapter.Fill(Me.DbWellsmeadowsHospitalG19DataSet.STAFF)
 
         ' Initialize panel visibility
         HideAllPanels()
@@ -238,5 +238,9 @@ Public Class MainPanel
         ' Reset label colors and set the active label color
         ResetLabelColors()
         lblstaff.ForeColor = Color.Orange  ' Set active color
+    End Sub
+
+    Private Sub pnl_Staff_Edit_2_Paint(sender As Object, e As PaintEventArgs) Handles pnl_Staff_Edit_2.Paint
+
     End Sub
 End Class
