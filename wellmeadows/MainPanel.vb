@@ -239,4 +239,16 @@ Public Class MainPanel
         ResetLabelColors()
         lblstaff.ForeColor = Color.Orange  ' Set active color
     End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        pnl_Staff_List.Visible = False
+        pnl_Staff_Edit_1.Visible = True
+        pnl_Staff_Edit_2.Visible = False
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        pnl_Staff_List.Visible = False
+        pnl_Staff_Edit_1.Visible = False
+        pnl_Staff_Edit_2.Visible = True
+    End Sub
 End Class
