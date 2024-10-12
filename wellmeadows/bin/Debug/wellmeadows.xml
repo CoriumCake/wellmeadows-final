@@ -22,11 +22,6 @@ wellmeadows
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:wellmeadows.My.Resources.Resources._68311248ba2f6e0ba94ff6da62eac9f6">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:wellmeadows.My.Resources.Resources._99999">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -53,6 +48,11 @@ wellmeadows
 </summary>
 </member>
 <member name="P:wellmeadows.My.Resources.Resources.dash_login_border1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:wellmeadows.My.Resources.Resources.dash_login_border2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -127,7 +127,12 @@ wellmeadows
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:wellmeadows.My.Resources.Resources.Remove_bg_ai_1727027116255">
+<member name="P:wellmeadows.My.Resources.Resources.print_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:wellmeadows.My.Resources.Resources.printer">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -237,6 +242,26 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.vwPatientLocalDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet._VwStaffFullDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.OutpatientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.HospitalSummaryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.AppointmentsRow">
 <summary>
 Represents strongly named DataRow class.
@@ -308,6 +333,26 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.vwStaffFullDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.vwPatientLocalDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet._VwStaffFullDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.OutpatientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.HospitalSummaryRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -387,6 +432,26 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.vwPatientLocalDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet._VwStaffFullDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.OutpatientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet.HospitalSummaryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.AppointmentsTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -462,6 +527,26 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.vwPatientLocalDetailsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.VwStaffFullDetailsTableAdapter1">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.OutpatientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.HospitalSummaryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
 <member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.TableAdapterManager">
 <summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
@@ -498,6 +583,351 @@ Update Order Option
 </summary>
 </member>
 <member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.AppointmentsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.ExperienceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.InpatientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.Local_doctorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.MedicationsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PatientFeedbackDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PatientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PharmaceuticalSuppliesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.QualificationsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.RequisitionFormDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.STAFFDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.SupplierDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.SurgicalAndNonSurgicalSuppliesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.WardsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.VwStaffFullDetailsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.AppointmentsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.ExperienceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.InpatientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.Local_doctorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.MedicationsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PatientFeedbackRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PatientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PharmaceuticalSuppliesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.QualificationsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.RequisitionFormRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.STAFFRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.SupplierRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.SurgicalAndNonSurgicalSuppliesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.WardsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.VwStaffFullDetailsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.AppointmentsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.ExperienceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.InpatientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.Local_doctorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.MedicationsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PatientFeedbackRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PatientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.PharmaceuticalSuppliesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.QualificationsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.RequisitionFormRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.STAFFRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.SupplierRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.SurgicalAndNonSurgicalSuppliesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.WardsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1.VwStaffFullDetailsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.AppointmentsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.ExperienceTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.InpatientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.Local_doctorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.MedicationsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.PatientFeedbackTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.PatientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.PharmaceuticalSuppliesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.QualificationsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.RequisitionFormTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.STAFFTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.SupplierTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.SurgicalAndNonSurgicalSuppliesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.WardsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.VwStaffFullDetailsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(wellmeadows.dbWellsmeadowsHospitalG19DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(wellmeadows.dbWellsmeadowsHospitalG19DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(wellmeadows.dbWellsmeadowsHospitalG19DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.UpdateAll(wellmeadows.dbWellsmeadowsHospitalG19DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:wellmeadows.dbWellsmeadowsHospitalG19DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

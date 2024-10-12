@@ -29,6 +29,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -68,6 +70,33 @@
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation, Version=8.0.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.KeyDerivation.8.0.8\lib\net462\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1823.32, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1823.32\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1823.32, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1823.32\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1823.32, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1823.32\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -111,35 +140,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbWellsmeadowsHospitalG19DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FormSearchAppointment.Designer.vb">
-      <DependentUpon>FormSearchAppointment.vb</DependentUpon>
+    <Compile Include="dbWellsmeadowsHospitalG19DataSet.vb">
+      <DependentUpon>dbWellsmeadowsHospitalG19DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FormSearchAppointment.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSearchPatient.Designer.vb">
-      <DependentUpon>FormSearchPatient.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormSearchPatient.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSearchStaff.Designer.vb">
-      <DependentUpon>FormSearchStaff.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormSearchStaff.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formsearchsupplier.Designer.vb">
-      <DependentUpon>Formsearchsupplier.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formsearchsupplier.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSearchWard.Designer.vb">
-      <DependentUpon>FormSearchWard.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormSearchWard.vb">
-      <SubType>Form</SubType>
+    <Compile Include="dbWellsmeadowsHospitalG19DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbWellsmeadowsHospitalG19DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="MainPanel.Designer.vb">
       <DependentUpon>MainPanel.vb</DependentUpon>
@@ -176,27 +183,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NavigationLogic.vb" />
     <Compile Include="OTPHelper.vb" />
+    <Compile Include="ReportPatient.Designer.vb">
+      <DependentUpon>ReportPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportStaff.Designer.vb">
+      <DependentUpon>ReportStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SessionManager.vb" />
+    <Compile Include="PatientPanelLogic.vb" />
+    <Compile Include="StaffPanelLogic.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSearchAppointment.resx">
-      <DependentUpon>FormSearchAppointment.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSearchPatient.resx">
-      <DependentUpon>FormSearchPatient.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSearchStaff.resx">
-      <DependentUpon>FormSearchStaff.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formsearchsupplier.resx">
-      <DependentUpon>Formsearchsupplier.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSearchWard.resx">
-      <DependentUpon>FormSearchWard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPanel.resx">
       <DependentUpon>MainPanel.vb</DependentUpon>
@@ -206,9 +213,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportPatie.rdlc" />
+    <EmbeddedResource Include="ReportPatient.resx">
+      <DependentUpon>ReportPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportStaff.resx">
+      <DependentUpon>ReportStaff.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +237,17 @@
     </None>
     <None Include="dbWellsmeadowsHospitalG19DataSet.xss">
       <DependentUpon>dbWellsmeadowsHospitalG19DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbWellsmeadowsHospitalG19DataSet1.xsc">
+      <DependentUpon>dbWellsmeadowsHospitalG19DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbWellsmeadowsHospitalG19DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbWellsmeadowsHospitalG19DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbWellsmeadowsHospitalG19DataSet1.xss">
+      <DependentUpon>dbWellsmeadowsHospitalG19DataSet1.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -266,15 +292,28 @@
     <None Include="Resources\99999.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Remove-bg.ai_17270271162551.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\black.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\68311248ba2f6e0ba94ff6da62eac9f6.jpg" />
+    <None Include="Resources\print_icon.png" />
+    <None Include="Resources\printer.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\dash_login_border.png" />
     <None Include="Resources\dash_login_border1.png" />
+    <None Include="Resources\dash_login_border2.png" />
     <Content Include="Resources\logo.ico" />
     <None Include="Resources\sidebar\banner.png" />
     <None Include="Resources\sidebar\logout.png" />
@@ -301,4 +340,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.1823.32\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
 </Project>

@@ -63,16 +63,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property _68311248ba2f6e0ba94ff6da62eac9f6() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("68311248ba2f6e0ba94ff6da62eac9f6", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property _99999() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("99999", resourceCulture)
@@ -126,6 +116,16 @@ Namespace My.Resources
         Friend ReadOnly Property dash_login_border1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dash_login_border1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property dash_login_border2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("dash_login_border2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -273,9 +273,19 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property Remove_bg_ai_1727027116255() As System.Drawing.Bitmap
+        Friend ReadOnly Property print_icon() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Remove-bg.ai_1727027116255", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("print_icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property printer() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("printer", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
